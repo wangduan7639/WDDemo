@@ -1,0 +1,172 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking-RACExtensions (0.1.8):
+    - AFNetworking (~> 2.5.3)
+    - ReactiveCocoa (~> 2.0)
+  - AFNetworking-RACRetryExtensions (0.2.0):
+    - AFNetworking (~> 2.x)
+    - ReactiveCocoa (~> 2.x)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - DACircularProgress (2.3.1)
+  - JSONModel (1.1.0)
+  - JSONModel-RACExtensions (0.2.1):
+    - JSONModel (~> 1.x)
+    - ReactiveCocoa (~> 2.x)
+  - Masonry (0.6.1)
+  - MBProgressHUD (0.9.1)
+  - MWPhotoBrowser (2.1.1):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - SDWebImage (!= 3.7.2, ~> 3.7)
+  - Nimbus (1.2.0):
+    - Nimbus/AttributedLabel (= 1.2.0)
+    - Nimbus/Badge (= 1.2.0)
+    - Nimbus/Collections (= 1.2.0)
+    - Nimbus/Collections (= 1.2.0)
+    - Nimbus/Core (= 1.2.0)
+    - Nimbus/CSS (= 1.2.0)
+    - Nimbus/Interapp (= 1.2.0)
+    - Nimbus/Launcher (= 1.2.0)
+    - Nimbus/Models (= 1.2.0)
+    - Nimbus/NetworkControllers (= 1.2.0)
+    - Nimbus/NetworkImage (= 1.2.0)
+    - Nimbus/Overview (= 1.2.0)
+    - Nimbus/PagingScrollView (= 1.2.0)
+    - Nimbus/Photos (= 1.2.0)
+    - Nimbus/Textfield (= 1.2.0)
+    - Nimbus/WebController (= 1.2.0)
+  - Nimbus/AttributedLabel (1.2.0):
+    - Nimbus/Core
+  - Nimbus/Badge (1.2.0):
+    - Nimbus/Core
+  - Nimbus/Collections (1.2.0):
+    - Nimbus/Core
+  - Nimbus/Core (1.2.0)
+  - Nimbus/CSS (1.2.0):
+    - AFNetworking (~> 2.1)
+    - Nimbus/Core
+    - Nimbus/Textfield
+  - Nimbus/Interapp (1.2.0):
+    - Nimbus/Core
+  - Nimbus/Launcher (1.2.0):
+    - Nimbus/Core
+    - Nimbus/PagingScrollView
+  - Nimbus/Models (1.2.0):
+    - Nimbus/Core
+  - Nimbus/NetworkControllers (1.2.0):
+    - Nimbus/Core
+  - Nimbus/NetworkImage (1.2.0):
+    - AFNetworking (~> 2.1)
+    - Nimbus/Core
+  - Nimbus/Overview (1.2.0):
+    - Nimbus/Core
+    - Nimbus/Models
+  - Nimbus/PagingScrollView (1.2.0):
+    - Nimbus/Core
+  - Nimbus/Photos (1.2.0):
+    - Nimbus/Core
+    - Nimbus/PagingScrollView
+  - Nimbus/Textfield (1.2.0):
+    - Nimbus/Core
+  - Nimbus/WebController (1.2.0):
+    - Nimbus/Core
+  - NimbusKit-Basics (1.2.1)
+  - NJKWebViewProgress (0.2.3):
+    - NJKWebViewProgress/Core (= 0.2.3)
+    - NJKWebViewProgress/ProgressView (= 0.2.3)
+  - NJKWebViewProgress/Core (0.2.3)
+  - NJKWebViewProgress/ProgressView (0.2.3)
+  - NSString+Color (1.1.3)
+  - NSString+Helpers (0.1.6)
+  - NSString-Helper (1.0.1)
+  - NSString-UrlEncode (2.0.0)
+  - ReactiveCocoa (2.4.7):
+    - ReactiveCocoa/UI (= 2.4.7)
+  - ReactiveCocoa/Core (2.4.7):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.4.7)
+  - ReactiveCocoa/UI (2.4.7):
+    - ReactiveCocoa/Core
+  - REFormattedNumberField (1.1.5)
+  - RETableViewManager (1.6):
+    - REFormattedNumberField (~> 1.1.5)
+    - REValidation (~> 0.1.4)
+  - REValidation (0.1.4)
+  - SAMTextView (0.2.2)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - SVProgressHUD (1.1.3)
+  - UIColor-Utilities (1.0.1)
+  - UIGestureRecognizer+ReactiveCocoa (0.1.0):
+    - ReactiveCocoa
+
+DEPENDENCIES:
+  - AFNetworking (= 2.5.4)
+  - AFNetworking-RACExtensions (= 0.1.8)
+  - AFNetworking-RACRetryExtensions (= 0.2.0)
+  - JSONModel (= 1.1.0)
+  - JSONModel-RACExtensions (= 0.2.1)
+  - Masonry (= 0.6.1)
+  - MWPhotoBrowser (= 2.1.1)
+  - Nimbus (~> 1.2.0)
+  - NimbusKit-Basics (~> 1.2.1)
+  - NJKWebViewProgress (= 0.2.3)
+  - NSString+Color (= 1.1.3)
+  - NSString+Helpers (= 0.1.6)
+  - NSString-Helper (= 1.0.1)
+  - NSString-UrlEncode (= 2.0.0)
+  - ReactiveCocoa (= 2.4.7)
+  - RETableViewManager (= 1.6)
+  - SAMTextView (= 0.2.2)
+  - SVProgressHUD (= 1.1.3)
+  - UIColor-Utilities (= 1.0.1)
+  - UIGestureRecognizer+ReactiveCocoa (= 0.1.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  AFNetworking-RACExtensions: a043c6b492fa892395ceb9d20bc4c94e96e08a57
+  AFNetworking-RACRetryExtensions: d22d7330b099eb437c19ce08e5c39e1d2d4fbe06
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  JSONModel: ec77e9865236a7a09d9cf7668df6b4b328d9ec1d
+  JSONModel-RACExtensions: 7549d365205a631d97533b5e103765816d0302e8
+  Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  MWPhotoBrowser: ba0d0c09ffda3a7ea10093518738c502c1c7141c
+  Nimbus: 3d6dfdeabf548ba4eb43be24e74fd202fb8c4e22
+  NimbusKit-Basics: e0d35afb13ed4ac50c61c9deb1a8a72dfa4fd214
+  NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
+  NSString+Color: 08fbd0b4cda31fd8602a5030f6bf1cedfed98203
+  NSString+Helpers: 72feaa49bfcdcdefe288da08c9656c4f5160245f
+  NSString-Helper: e26909c87694add9be022ca24e856e3b6148fe89
+  NSString-UrlEncode: d26eb4378531911d54694733143dd493c1571f5c
+  ReactiveCocoa: eb38dee0a0e698f73a9b25e5c1faea2bb4c79240
+  REFormattedNumberField: be3d55dd709f65541fb26b7e1709da07903147f8
+  RETableViewManager: 9667ecb29c005c32df40a1dd1828224840a351a2
+  REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
+  SAMTextView: 979c43bb1fa5859ddfbfeb35e9c296a2b0ec55fd
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  UIColor-Utilities: 6746a54dcdb3bc012dd7aeaeea5588ae2100beb2
+  UIGestureRecognizer+ReactiveCocoa: ac3af9a346004a4676af6ce9e062dbc6d9b92ad7
+
+COCOAPODS: 0.39.0
