@@ -20,6 +20,8 @@ pod 'NSString+Helpers','0.1.6'
 pod 'NSString+Color','1.1.3'
 pod 'Nimbus', '~> 1.2.0'
 pod 'NimbusKit-Basics', '~> 1.2.1'
+pod 'DTCoreText', '~> 1.6.16'
+pod 'CoreTextLabel', '~> 1.5.13'
 
 post_install do |installer|
     installer.pods_project.targets.each do |target|

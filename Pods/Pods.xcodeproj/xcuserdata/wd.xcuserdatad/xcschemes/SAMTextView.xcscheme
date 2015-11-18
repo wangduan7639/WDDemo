@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CEF076FBD2C5D02636CF28BB'
+               BlueprintIdentifier = 'E8EB3E660DFCBE261479F129'
                BlueprintName = 'SAMTextView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libSAMTextView.a'>

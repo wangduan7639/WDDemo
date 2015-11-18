@@ -39,6 +39,11 @@
 		766E10601BF96D6800D18820 /* WDDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 766E105F1BF96D6800D18820 /* WDDemoUITests.m */; };
 		7671C52E1BFB290600DCA4FE /* WDNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7671C52D1BFB290600DCA4FE /* WDNetworkViewController.m */; };
 		7671C5311BFB291B00DCA4FE /* WDNetworkViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7671C5301BFB291B00DCA4FE /* WDNetworkViewModel.m */; };
+		7671C5351BFC307D00DCA4FE /* Sample.html in Resources */ = {isa = PBXBuildFile; fileRef = 7671C5341BFC307D00DCA4FE /* Sample.html */; };
+		7671C5371BFC30B300DCA4FE /* File.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7671C5361BFC30B300DCA4FE /* File.rtf */; };
+		7671C53A1BFC330F00DCA4FE /* WDHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7671C5391BFC330F00DCA4FE /* WDHtmlViewController.m */; };
+		7671C53D1BFC332C00DCA4FE /* WDCoreTextTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7671C53C1BFC332C00DCA4FE /* WDCoreTextTestViewController.m */; };
+		7671C5431BFC4F7600DCA4FE /* WDCoreTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7671C5421BFC4F7600DCA4FE /* WDCoreTextLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +130,14 @@
 		7671C52D1BFB290600DCA4FE /* WDNetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDNetworkViewController.m; sourceTree = "<group>"; };
 		7671C52F1BFB291B00DCA4FE /* WDNetworkViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDNetworkViewModel.h; sourceTree = "<group>"; };
 		7671C5301BFB291B00DCA4FE /* WDNetworkViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDNetworkViewModel.m; sourceTree = "<group>"; };
+		7671C5341BFC307D00DCA4FE /* Sample.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Sample.html; sourceTree = "<group>"; };
+		7671C5361BFC30B300DCA4FE /* File.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = File.rtf; sourceTree = "<group>"; };
+		7671C5381BFC330F00DCA4FE /* WDHtmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHtmlViewController.h; sourceTree = "<group>"; };
+		7671C5391BFC330F00DCA4FE /* WDHtmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHtmlViewController.m; sourceTree = "<group>"; };
+		7671C53B1BFC332C00DCA4FE /* WDCoreTextTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDCoreTextTestViewController.h; sourceTree = "<group>"; };
+		7671C53C1BFC332C00DCA4FE /* WDCoreTextTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDCoreTextTestViewController.m; sourceTree = "<group>"; };
+		7671C5411BFC4F7600DCA4FE /* WDCoreTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDCoreTextLabel.h; sourceTree = "<group>"; };
+		7671C5421BFC4F7600DCA4FE /* WDCoreTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDCoreTextLabel.m; sourceTree = "<group>"; };
 		CDF57370295AC2D676BD6BC2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FAB0BE7E17162B6745C1EE0C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -286,6 +299,8 @@
 		760110C11BF9CEEE00982091 /* CoreText */ = {
 			isa = PBXGroup;
 			children = (
+				7671C5341BFC307D00DCA4FE /* Sample.html */,
+				7671C5361BFC30B300DCA4FE /* File.rtf */,
 				760110C21BF9CEEE00982091 /* View */,
 				760110C31BF9CEEE00982091 /* ViewController */,
 				760110C41BF9CEEE00982091 /* ViewModel */,
@@ -296,6 +311,8 @@
 		760110C21BF9CEEE00982091 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7671C5411BFC4F7600DCA4FE /* WDCoreTextLabel.h */,
+				7671C5421BFC4F7600DCA4FE /* WDCoreTextLabel.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -305,6 +322,10 @@
 			children = (
 				760110C51BF9CF1A00982091 /* WDCoreTextViewController.h */,
 				760110C61BF9CF1A00982091 /* WDCoreTextViewController.m */,
+				7671C5381BFC330F00DCA4FE /* WDHtmlViewController.h */,
+				7671C5391BFC330F00DCA4FE /* WDHtmlViewController.m */,
+				7671C53B1BFC332C00DCA4FE /* WDCoreTextTestViewController.h */,
+				7671C53C1BFC332C00DCA4FE /* WDCoreTextTestViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -584,6 +605,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7671C5371BFC30B300DCA4FE /* File.rtf in Resources */,
+				7671C5351BFC307D00DCA4FE /* Sample.html in Resources */,
 				760110861BF9AF7700982091 /* LaunchScreen.storyboard in Resources */,
 				766E10471BF96D6800D18820 /* Assets.xcassets in Resources */,
 				766E10421BF96D6800D18820 /* Main.storyboard in Resources */,
@@ -668,6 +691,7 @@
 				7671C52E1BFB290600DCA4FE /* WDNetworkViewController.m in Sources */,
 				760110E41BF9FF6000982091 /* WDNetworkTestService.m in Sources */,
 				760110E61BF9FF6000982091 /* WDHttpRequestParam.m in Sources */,
+				7671C53D1BFC332C00DCA4FE /* WDCoreTextTestViewController.m in Sources */,
 				760110CA1BF9CF2E00982091 /* WDCoreTextViewModel.m in Sources */,
 				760110C71BF9CF1A00982091 /* WDCoreTextViewController.m in Sources */,
 				7601108A1BF9B26600982091 /* WDOpenSource.m in Sources */,
@@ -679,9 +703,11 @@
 				766E10451BF96D6800D18820 /* WDDemo.xcdatamodeld in Sources */,
 				760110E31BF9FF6000982091 /* WDNetworkService.m in Sources */,
 				760110E11BF9FF6000982091 /* WDNetworkTestService_RAC.m in Sources */,
+				7671C5431BFC4F7600DCA4FE /* WDCoreTextLabel.m in Sources */,
 				760110E01BF9FF6000982091 /* WDNetworkService_RAC.m in Sources */,
 				760110B01BF9BD4C00982091 /* WDViewModel.m in Sources */,
 				760110971BF9BB0000982091 /* UIColor+Tool.m in Sources */,
+				7671C53A1BFC330F00DCA4FE /* WDHtmlViewController.m in Sources */,
 				760110B41BF9BD7200982091 /* WDNavigationManager.m in Sources */,
 				760110981BF9BB0000982091 /* UIView+Tool.m in Sources */,
 				760110E71BF9FF6000982091 /* WDRequestURL.m in Sources */,

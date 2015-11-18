@@ -14,6 +14,9 @@
 #import "WDNetworkViewController.h"
 #import "WDNetworkViewModel.h"
 
+#import "WDCoreTextViewController.h"
+#import "WDCoreTextViewModel.h"
+
 @interface WDTestViewController ()<RETableViewManagerDelegate>
 
 @property (nonatomic, strong) UITableView   *tableView;
@@ -57,16 +60,29 @@
                                            }];
     [self.tableViewSection addItem:item];
     
-    item = [RETableViewItem itemWithTitle:@"AFNetworkTest" accessoryType:UITableViewCellAccessoryDisclosureIndicator selectionHandler:^(RETableViewItem *item) {
-        @strongify(self);
-        UITableViewCell * cell = [self.tableView cellForRowAtIndexPath:item.indexPath];
-        cell.selected = NO;
-        WDNetworkViewModel * viewModel = [[WDNetworkViewModel alloc] init];
-        WDNetworkViewController * viewController = [[WDNetworkViewController alloc] initViewModel:viewModel];
-        [[WDNavigationManager sharedManager] pushViewController:viewController];
-    }];
+    item = [RETableViewItem itemWithTitle:@"AFNetworkTest"
+                            accessoryType:UITableViewCellAccessoryDisclosureIndicator
+                         selectionHandler:^(RETableViewItem *item) {
+                            @strongify(self);
+                            UITableViewCell * cell = [self.tableView cellForRowAtIndexPath:item.indexPath];
+                            cell.selected = NO;
+                            WDNetworkViewModel * viewModel = [[WDNetworkViewModel alloc] init];
+                            WDNetworkViewController * viewController = [[WDNetworkViewController alloc] initViewModel:viewModel];
+                            [[WDNavigationManager sharedManager] pushViewController:viewController];
+                        }];
     [self.tableViewSection addItem:item];
     
+    item = [RETableViewItem itemWithTitle:@"CoreText"
+                            accessoryType:UITableViewCellAccessoryDisclosureIndicator
+                         selectionHandler:^(RETableViewItem *item) {
+                             @strongify(self);
+                             UITableViewCell * cell = [self.tableView cellForRowAtIndexPath:item.indexPath];
+                             cell.selected = NO;
+                             WDCoreTextViewModel * viewModel = [[WDCoreTextViewModel alloc] init];
+                             WDCoreTextViewController * viewController = [[WDCoreTextViewController alloc] initViewModel:viewModel];
+                             [[WDNavigationManager sharedManager] pushViewController:viewController];
+                         }];
+    [self.tableViewSection addItem:item];
 }
 
 @end

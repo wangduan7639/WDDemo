@@ -10,4 +10,7 @@
 
 @interface WDCoreTextViewModel : WDViewModel
 
+@property (nonatomic, strong)RACCommand *htmlCommand;
+@property (nonatomic, strong)RACCommand *coreTextCommand;
+
 @end

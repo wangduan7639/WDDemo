@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WDNavigationManager.h"
 
-@class WDNavigationManager;
 @interface WDViewModel : NSObject
 
 @property (nonatomic, strong)WDNavigationManager    *navigationManager;

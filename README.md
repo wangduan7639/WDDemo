@@ -44,3 +44,5 @@ wangduan空闲时间研究的各种功能Demo汇总。
 * [SVProgressHUD](https://github.com/TransitApp/SVProgressHUD.git)
 * [UIColor-Utilities](https://github.com/fcanas/uicolor-utilities.git)
 * [UIGestureRecognizer+ReactiveCocoa](https://github.com/kaiinui/UIGestureRecognizer-RACExtension.git)
+* [CoreTextLabel](https://github.com/appfarms/CoreTextLabel.git)
+* [DTCoreText](https://github.com/Cocoanetics/DTCoreText.git)

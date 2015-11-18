@@ -1,4 +1,5 @@
 PODS:
+  - AFMacros (1.3.1)
   - AFNetworking (2.5.4):
     - AFNetworking/NSURLConnection (= 2.5.4)
     - AFNetworking/NSURLSession (= 2.5.4)
@@ -26,7 +27,22 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - CoreTextLabel (1.5.13):
+    - AFMacros
+    - NSString-HTML
+    - RegexKitLite (~> 4.0)
   - DACircularProgress (2.3.1)
+  - DTCoreText (1.6.16):
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTFoundation/Core (1.7.8)
+  - DTFoundation/DTAnimatedGIF (1.7.8)
+  - DTFoundation/DTHTMLParser (1.7.8):
+    - DTFoundation/Core
+  - DTFoundation/UIKit (1.7.8):
+    - DTFoundation/Core
   - JSONModel (1.1.0)
   - JSONModel-RACExtensions (0.2.1):
     - JSONModel (~> 1.x)
@@ -98,6 +114,7 @@ PODS:
   - NSString+Color (1.1.3)
   - NSString+Helpers (0.1.6)
   - NSString-Helper (1.0.1)
+  - NSString-HTML (0.0.1)
   - NSString-UrlEncode (2.0.0)
   - ReactiveCocoa (2.4.7):
     - ReactiveCocoa/UI (= 2.4.7)
@@ -107,6 +124,7 @@ PODS:
   - ReactiveCocoa/UI (2.4.7):
     - ReactiveCocoa/Core
   - REFormattedNumberField (1.1.5)
+  - RegexKitLite (4.0)
   - RETableViewManager (1.6):
     - REFormattedNumberField (~> 1.1.5)
     - REValidation (~> 0.1.4)
@@ -124,6 +142,8 @@ DEPENDENCIES:
   - AFNetworking (= 2.5.4)
   - AFNetworking-RACExtensions (= 0.1.8)
   - AFNetworking-RACRetryExtensions (= 0.2.0)
+  - CoreTextLabel (~> 1.5.13)
+  - DTCoreText (~> 1.6.16)
   - JSONModel (= 1.1.0)
   - JSONModel-RACExtensions (= 0.2.1)
   - Masonry (= 0.6.1)
@@ -143,10 +163,14 @@ DEPENDENCIES:
   - UIGestureRecognizer+ReactiveCocoa (= 0.1.0)
 
 SPEC CHECKSUMS:
+  AFMacros: 27e01642ded5a2862ec69c5cf0b024c7f776a637
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   AFNetworking-RACExtensions: a043c6b492fa892395ceb9d20bc4c94e96e08a57
   AFNetworking-RACRetryExtensions: d22d7330b099eb437c19ce08e5c39e1d2d4fbe06
+  CoreTextLabel: 7fdec4696a00ee97db520231f6cc7141767cdabd
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  DTCoreText: 934a16fe9ffdd169c96261721b39dc312b75713d
+  DTFoundation: 46e2b2fafe78d67febfd8d1f85fe9845a093f00e
   JSONModel: ec77e9865236a7a09d9cf7668df6b4b328d9ec1d
   JSONModel-RACExtensions: 7549d365205a631d97533b5e103765816d0302e8
   Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
@@ -158,9 +182,11 @@ SPEC CHECKSUMS:
   NSString+Color: 08fbd0b4cda31fd8602a5030f6bf1cedfed98203
   NSString+Helpers: 72feaa49bfcdcdefe288da08c9656c4f5160245f
   NSString-Helper: e26909c87694add9be022ca24e856e3b6148fe89
+  NSString-HTML: 0dc0ae9d430d20a96dda961a346fa842fffa8c1f
   NSString-UrlEncode: d26eb4378531911d54694733143dd493c1571f5c
   ReactiveCocoa: eb38dee0a0e698f73a9b25e5c1faea2bb4c79240
   REFormattedNumberField: be3d55dd709f65541fb26b7e1709da07903147f8
+  RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   RETableViewManager: 9667ecb29c005c32df40a1dd1828224840a351a2
   REValidation: 38c4de1be58455f8b00aab208ac80db316a66b7f
   SAMTextView: 979c43bb1fa5859ddfbfeb35e9c296a2b0ec55fd

@@ -7,7 +7,6 @@
 //
 
 #import "WDViewModel.h"
-#import "WDNavigationManager.h"
 
 @implementation WDViewModel
 

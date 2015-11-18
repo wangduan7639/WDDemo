@@ -42,6 +42,8 @@
 #import <UIGestureRecognizer+ReactiveCocoa/UIGestureRecognizer+ReactiveCocoa.h>
 #import <UIGestureRecognizer+ReactiveCocoa/UIGestureRecognizer+ReactiveCocoaProtected.h>
 #import <UIGestureRecognizer+ReactiveCocoa/RACGestureRecognizerActionHandler.h>
+#import <CoreTextLabel/CoreTextLabel.h>
+#import <DTCoreText/DTCoreText.h>
 
 @interface WDOpenSource : NSObject
 
