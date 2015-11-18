@@ -11,6 +11,8 @@
 
 @interface WDRACTestViewController ()
 
+@property (nonatomic, strong) WDRACTestViewModel    *viewModel;
+
 @end
 
 @implementation WDRACTestViewController

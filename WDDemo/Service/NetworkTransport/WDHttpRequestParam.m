@@ -1,14 +1,14 @@
 //
-//  YXHttpRequestParam.m
+//  WDHttpRequestParam.m
 //  AFNetWorkingDemo
 //
 //  Created by wd on 15/10/19.
 //  Copyright © 2015年 wd. All rights reserved.
 //
 
-#import "YXHttpRequestParam.h"
+#import "WDHttpRequestParam.h"
 
-@implementation YXHttpRequestParam
+@implementation WDHttpRequestParam
 - (instancetype) init
 {
     if (self = [super init]) {
@@ -18,19 +18,19 @@
     return self;
 }
 
-- (instancetype) initWithHttpMethodType: (YXHttpMethodType) type fullUrl: (NSString*) fullUrl
+- (instancetype) initWithHttpMethodType: (WDHttpMethodType) type fullUrl: (NSString*) fullUrl
 {
     if (self = [self init]) {
         switch (type) {
-            case YXHttpMethodTypeGet:
+            case WDHttpMethodTypeGet:
                 self.httpMethod = @"GET";
                 break;
                 
-            case YXHttpMethodTypePost:
+            case WDHttpMethodTypePost:
                 self.httpMethod = @"POST";
                 break;
                 
-            case YXHttpMethodTypePut:
+            case WDHttpMethodTypePut:
                 self.httpMethod = @"PUT";
                 break;
                 
@@ -98,9 +98,9 @@
     }
 }
 @end
-@implementation NSString (YXUrlPathExtensions)
+@implementation NSString (WDUrlPathExtensions)
 
-- (NSString*) YXStringByAppendingUrlComponent: (NSString*) str
+- (NSString*) WDStringByAppendingUrlComponent: (NSString*) str
 {
     NSCharacterSet* slashCharacterSet = [NSCharacterSet characterSetWithCharactersInString: @"/"];
     NSString* urlPath = [self stringByTrimmingCharactersInSet: slashCharacterSet];

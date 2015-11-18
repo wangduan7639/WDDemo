@@ -1,5 +1,5 @@
 //
-//  YXNetworkService_RAC.h
+//  WDNetworkService_RAC.h
 //  AFNetWorkingDemo
 //
 //  Created by wd on 15/10/19.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YXNetworkService_RAC : NSObject
+@interface WDNetworkService_RAC : NSObject
 + (instancetype) defaultService;
 @property (nonatomic, strong, readonly) AFHTTPRequestOperationManager* client;
 @end

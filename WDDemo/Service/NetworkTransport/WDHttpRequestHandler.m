@@ -1,21 +1,32 @@
 //
-//  YXHttprequestHandler.m
+//  WDHttprequestHandler.m
 //  AFNetWorkingDemo
 //
 //  Created by wd on 15/10/19.
 //  Copyright © 2015年 wd. All rights reserved.
 //
 
-#import "YXHttpRequestHandler.h"
+#import "WDHttpRequestHandler.h"
 
 static AFHTTPRequestOperationManager * s_requestOperationManager = nil;
-@implementation YXHttpRequestHandler{
+
+@interface WDHttpRequestHandler ()
+{
     AFHTTPRequestOperation* _requestOperation;
 }
-- (instancetype)initWithRequestParam:(YXHttpRequestParam *)param success:(YXHttpRequesthandlerSuccessBlock)success failure:(YXHttpRequestHandlerFailureBlock)failure
+
+
+@end
+@implementation WDHttpRequestHandler
+
+- (instancetype) initWithRequestParam:(WDHttpRequestParam*)param target:(id)target action:(SEL)action delegate:(id<WDHttpRequestDelegate>)delegate success:(WDRequestSuccessBlock)success failure:(WDRequestFailureBlock)failure showHUD:(BOOL)showHUD
 {
     if (self = [super init]) {
         self.requestParam = param;
+        self.delegate = delegate;
+        self.target = target;
+        self.selAction = action;
+        self.showHUD = showHUD;
         self.successBlock = success;
         self.failureBlock = failure;
         self.timeOutSeconds = 15;
@@ -38,20 +49,49 @@ static AFHTTPRequestOperationManager * s_requestOperationManager = nil;
     
     __weak typeof (self) weakSelf = self;
     _requestOperation = [s_requestOperationManager HTTPRequestOperationWithRequest: urlRequest success: ^(AFHTTPRequestOperation* operation, id responseObject){
-        if (weakSelf.successBlock) {
-            weakSelf.successBlock (weakSelf, responseObject);
-        }
+        [weakSelf requestFinishSuccess:responseObject];
     } failure: ^(AFHTTPRequestOperation* operation, NSError* error){
-        if (weakSelf.failureBlock) {
-            weakSelf.failureBlock (weakSelf, error);
-        }
+        [weakSelf requestFinishFailure:error];
     }];
+    _requestOperation.name = self.requestParam.url;
     [s_requestOperationManager.operationQueue addOperation: _requestOperation];
 }
-- (void) updateImageWithImage:(UIImage *)image
+
+- (void)requestFinishSuccess:(id)responseObject
+{
+    if (![NSJSONSerialization isValidJSONObject:responseObject]) {
+        NSError * error = [NSError errorWithDomain: @"mobile.hwk.yanxiu.com" code: -1 userInfo: @{ NSLocalizedDescriptionKey: @"responseJSON NULL" }];
+        [self requestFinishFailure:error];
+    }else{
+        WDModel * model = [[WDModel alloc] initWithDictionary:responseObject error:nil];
+        if (self.successBlock) {
+            self.successBlock(model);
+        }
+        if (self.delegate && [self respondsToSelector:@selector(requestDidFinishWithData:)]) {
+            [self.delegate performSelector:@selector(requestDidFinishWithData:) withObject:model];
+        }
+        if (self.target && [self.target respondsToSelector:@selector(action)]) {
+            [self.target performSelector:@selector(action) withObject:model withObject:nil];
+        }
+    }
+}
+- (void)requestFinishFailure:(NSError *)error
+{
+    if (self.failureBlock) {
+        self.failureBlock (error);
+    }
+    if (self.delegate && [self respondsToSelector:@selector(requestDidFailWithError:)]) {
+        [self.delegate performSelector:@selector(requestDidFailWithError:) withObject:error];
+    }
+    if (self.target && [self.target respondsToSelector:@selector(action)]) {
+        [self.target performSelector:@selector(action) withObject:nil withObject:error];
+    }
+
+}
+- (void)updateImageWithImage:(UIImage *)image
 {
     if (!image) {
-        self.failureBlock(self,[NSError errorWithDomain: @"mobile.hwk.yanxiu.com" code: -1 userInfo: @{ NSLocalizedDescriptionKey: @"空图像" }]);
+        self.failureBlock([NSError errorWithDomain: @"mobile.hwk.yanxiu.com" code: -1 userInfo: @{ NSLocalizedDescriptionKey: @"空图像" }]);
     }
    
     __weak typeof (self) weakSelf = self;
@@ -60,17 +100,13 @@ static AFHTTPRequestOperationManager * s_requestOperationManager = nil;
         NSData* data = UIImageJPEGRepresentation (image, 1.0f);
         [formData appendPartWithFileData: data name: @"user_img" fileName: imageName mimeType: @"image/jpg"];
     } success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        if (self.successBlock) {
-            self.successBlock(weakSelf,responseObject);
-        }
+        [weakSelf requestFinishSuccess:responseObject];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        if (weakSelf.failureBlock) {
-            weakSelf.failureBlock (weakSelf, error);
-        }
+        [weakSelf requestFinishFailure:error];
     }];
 
 }
-- (void) cancel
+- (void)cancel
 {
     if (_requestOperation) {
         [_requestOperation cancel];

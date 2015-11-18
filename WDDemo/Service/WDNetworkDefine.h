@@ -6,37 +6,61 @@
 //  Copyright © 2015年 wd. All rights reserved.
 //
 
-#ifndef WDNetworkDefine_h
-#define WDNetworkDefine_h
-
+#import "WDModel.h"
 /**
  *  请求类型
  */
-typedef enum {
-    WDNetworkGET = 1,   //get
-    WDNetworkPOST       //post
-} WDNetworkType;
-
-#if NS_BLOCKS_AVAILABLE
-/**
- *  请求开始的回调（下载时用到）
- */
-typedef void (^WDNetworkStartBlock)(void);
+typedef NS_ENUM (NSInteger, WDHttpMethodType) {
+    WDHttpMethodTypeGet,
+    WDHttpMethodTypePost,
+    WDHttpMethodTypePut,
+};
 
 /**
  *  请求成功回调
  *
- *  @param returnData 回调block
+ *  @param WDRequestSuccessBlock 回调block
  */
-typedef void (^WDNetworkSuccessBlock)(id reponseData);
+typedef void (^ WDRequestSuccessBlock)(WDModel * model);
+
 
 /**
  *  请求失败回调
  *
- *  @param error 回调block
+ *  @param WDRequestFailureBlock 回调block
  */
-typedef void (^WDNetworkFailureBlock)(NSError *error);
+typedef void (^ WDRequestFailureBlock)(NSError* error);
 
-#endif
 
-#endif /* WDNetworkDefine_h */
+/**
+ *   AFN 请求封装的代理协议
+ */
+@protocol WDHttpRequestDelegate <NSObject>
+
+@optional
+/**
+ *   请求结束
+ *
+ *   @param  返回的数据
+ */
+- (void)requestDidFinishWithData:(WDModel *)model;
+/**
+ *   请求失败
+ *
+ *   @param error 失败的 error
+ */
+- (void)requestDidFailWithError:(NSError*)error;
+
+/**
+ *   target   SEL的默认方法，规则。
+ */
+- (void)finishedRequest:(WDModel *)model didFaild:(NSError*)error;
+
+@end
+
+
+typedef NS_ENUM (NSInteger, WDRequestTag) {
+    WDRequestTag_Unknown,
+    WDRequestTag_GetProduceCode = 10,
+    WDRequestTag_WeekRank = 11,
+};

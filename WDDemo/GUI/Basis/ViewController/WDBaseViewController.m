@@ -10,13 +10,17 @@
 
 @interface WDBaseViewController ()
 
+@property (nonatomic, strong) WDViewModel   *viewModel;
+
 @end
 
 @implementation WDBaseViewController
+@dynamic viewModel;
+
 - (instancetype) initViewModel:(WDViewModel *)viewModel
 {
     if (self = [super init]) {
-        _viewModel = viewModel;
+        viewModel = viewModel;
     }
     return self;
 }

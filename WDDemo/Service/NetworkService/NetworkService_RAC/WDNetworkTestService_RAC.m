@@ -1,18 +1,18 @@
 //
-//  YXNetworkTestService_RAC.m
+//  WDNetworkTestService_RAC.m
 //  AFNetWorkingDemo
 //
 //  Created by wd on 15/10/19.
 //  Copyright © 2015年 wd. All rights reserved.
 //
 
-#import "YXNetworkTestService_RAC.h"
-#import "YXModel.h"
+#import "WDNetworkTestService_RAC.h"
+#import "WDModel.h"
 
-@implementation YXNetworkTestService_RAC
+@implementation WDNetworkTestService_RAC
 + (instancetype) defaultService
 {
-    static YXNetworkTestService_RAC* _defaultService = nil;
+    static WDNetworkTestService_RAC* _defaultService = nil;
     static dispatch_once_t _onceToken = 0;
     
     dispatch_once (&_onceToken, ^{
@@ -20,7 +20,7 @@
     });
     return _defaultService;
 }
-- (RACSignal*) yxrac_xxxxxxxxWithId: (NSString*) xxId
+- (RACSignal*)wdrac_xxxxxxxxWithId: (NSString*) xxId
 {
     static NSInteger i = 0;
     NSString * str = [NSString stringWithFormat:@"%ld",i++];
@@ -42,7 +42,7 @@
                   if (!json) {
                       return [RACSignal error: nil];
                   }
-                  YXModel* m = [[YXModel alloc] initWithDictionary:json error:nil];
+                  WDModel* m = [[WDModel alloc] initWithDictionary:json error:nil];
                   return [RACSignal return : m];
               }];
     
@@ -53,7 +53,7 @@
 */
 }
 
-- (RACSignal*) yxrac_getProduceCodeWithPhoneNumber:(NSString *)phone type:(NSString *)type
+- (RACSignal*)wdrac_getProduceCodeWithPhoneNumber:(NSString *)phone type:(NSString *)type
 {
     phone = [NSString getSafeStringWithString:phone];
     type = [NSString getSafeStringWithString:type];
@@ -73,7 +73,7 @@
                   if (!json) {
                       return [RACSignal error: nil];
                   }
-                  YXModel* m = [[YXModel alloc] initWithDictionary:json error:nil];
+                  WDModel* m = [[WDModel alloc] initWithDictionary:json error:nil];
                   return [RACSignal return : m];
               }];
     
@@ -83,7 +83,7 @@
     return signal;
 }
 
-- (RACSignal*) yxrac_updateImageWithImage:(UIImage *)image
+- (RACSignal*)wdrac_updateImageWithImage:(UIImage *)image
 {
     if (!image) {
         return [RACSignal error: [NSError errorWithDomain: @"mobile.hwk.yanxiu.com" code: -1 userInfo: @{ NSLocalizedDescriptionKey: @"空图像" }]];
@@ -125,7 +125,7 @@
         if (!json) {
             return [RACSignal error: nil];
         }
-        YXModel* m = [[YXModel alloc] initWithDictionary:json error:nil];
+        WDModel* m = [[WDModel alloc] initWithDictionary:json error:nil];
         return [RACSignal return : m];
     }];
     [signal catch:^RACSignal *(NSError *error) {
@@ -134,7 +134,7 @@
     return signal;
 }
 
-- (RACSignal*) yxrac_getWeekRank
+- (RACSignal*)wdrac_getWeekRank
 {
     RACSignal* signal = nil;
     
@@ -152,7 +152,7 @@
                   if (!json) {
                       return [RACSignal error: nil];
                   }
-                  YXModel* m = [[YXModel alloc] initWithDictionary:json error:nil];
+                  WDModel* m = [[WDModel alloc] initWithDictionary:json error:nil];
                   return [RACSignal return : m];
               }];
     

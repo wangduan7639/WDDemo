@@ -11,7 +11,6 @@
 @class WDViewModel;
 @interface WDBaseViewController : UIViewController
 
-@property (nonatomic, strong) WDViewModel   *viewModel;
 //子类继承。
 - (instancetype) initViewModel:(WDViewModel *)viewModel;
 //子类重写继承

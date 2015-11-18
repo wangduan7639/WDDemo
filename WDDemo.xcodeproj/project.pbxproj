@@ -22,14 +22,14 @@
 		760110C01BF9C8AE00982091 /* WDRACTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110BF1BF9C8AE00982091 /* WDRACTestViewModel.m */; };
 		760110C71BF9CF1A00982091 /* WDCoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110C61BF9CF1A00982091 /* WDCoreTextViewController.m */; };
 		760110CA1BF9CF2E00982091 /* WDCoreTextViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110C91BF9CF2E00982091 /* WDCoreTextViewModel.m */; };
-		760110E01BF9FF6000982091 /* YXNetworkService_RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110D11BF9FF6000982091 /* YXNetworkService_RAC.m */; };
-		760110E11BF9FF6000982091 /* YXNetworkTestService_RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110D31BF9FF6000982091 /* YXNetworkTestService_RAC.m */; };
-		760110E31BF9FF6000982091 /* YXNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110D61BF9FF6000982091 /* YXNetworkService.m */; };
-		760110E41BF9FF6000982091 /* YXNetworkTestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110D81BF9FF6000982091 /* YXNetworkTestService.m */; };
-		760110E51BF9FF6000982091 /* YXHttpRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110DB1BF9FF6000982091 /* YXHttpRequestHandler.m */; };
-		760110E61BF9FF6000982091 /* YXHttpRequestParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110DD1BF9FF6000982091 /* YXHttpRequestParam.m */; };
-		760110E71BF9FF6000982091 /* YXRequestURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110DF1BF9FF6000982091 /* YXRequestURL.m */; };
-		760110EB1BFA001B00982091 /* YXModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110EA1BFA001B00982091 /* YXModel.m */; };
+		760110E01BF9FF6000982091 /* WDNetworkService_RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110D11BF9FF6000982091 /* WDNetworkService_RAC.m */; };
+		760110E11BF9FF6000982091 /* WDNetworkTestService_RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110D31BF9FF6000982091 /* WDNetworkTestService_RAC.m */; };
+		760110E31BF9FF6000982091 /* WDNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110D61BF9FF6000982091 /* WDNetworkService.m */; };
+		760110E41BF9FF6000982091 /* WDNetworkTestService.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110D81BF9FF6000982091 /* WDNetworkTestService.m */; };
+		760110E51BF9FF6000982091 /* WDHttpRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110DB1BF9FF6000982091 /* WDHttpRequestHandler.m */; };
+		760110E61BF9FF6000982091 /* WDHttpRequestParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110DD1BF9FF6000982091 /* WDHttpRequestParam.m */; };
+		760110E71BF9FF6000982091 /* WDRequestURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110DF1BF9FF6000982091 /* WDRequestURL.m */; };
+		760110EB1BFA001B00982091 /* WDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110EA1BFA001B00982091 /* WDModel.m */; };
 		766E10391BF96D6800D18820 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 766E10381BF96D6800D18820 /* main.m */; };
 		766E103C1BF96D6800D18820 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 766E103B1BF96D6800D18820 /* AppDelegate.m */; };
 		766E10421BF96D6800D18820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 766E10401BF96D6800D18820 /* Main.storyboard */; };
@@ -37,6 +37,8 @@
 		766E10471BF96D6800D18820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766E10461BF96D6800D18820 /* Assets.xcassets */; };
 		766E10551BF96D6800D18820 /* WDDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 766E10541BF96D6800D18820 /* WDDemoTests.m */; };
 		766E10601BF96D6800D18820 /* WDDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 766E105F1BF96D6800D18820 /* WDDemoUITests.m */; };
+		7671C52E1BFB290600DCA4FE /* WDNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7671C52D1BFB290600DCA4FE /* WDNetworkViewController.m */; };
+		7671C5311BFB291B00DCA4FE /* WDNetworkViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7671C5301BFB291B00DCA4FE /* WDNetworkViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,22 +91,22 @@
 		760110C91BF9CF2E00982091 /* WDCoreTextViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDCoreTextViewModel.m; sourceTree = "<group>"; };
 		760110CB1BF9F16600982091 /* WDDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDDebug.h; sourceTree = "<group>"; };
 		760110CD1BF9F51D00982091 /* WDNetworkDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDNetworkDefine.h; sourceTree = "<group>"; };
-		760110D01BF9FF6000982091 /* YXNetworkService_RAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNetworkService_RAC.h; sourceTree = "<group>"; };
-		760110D11BF9FF6000982091 /* YXNetworkService_RAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNetworkService_RAC.m; sourceTree = "<group>"; };
-		760110D21BF9FF6000982091 /* YXNetworkTestService_RAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNetworkTestService_RAC.h; sourceTree = "<group>"; };
-		760110D31BF9FF6000982091 /* YXNetworkTestService_RAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNetworkTestService_RAC.m; sourceTree = "<group>"; };
-		760110D51BF9FF6000982091 /* YXNetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNetworkService.h; sourceTree = "<group>"; };
-		760110D61BF9FF6000982091 /* YXNetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNetworkService.m; sourceTree = "<group>"; };
-		760110D71BF9FF6000982091 /* YXNetworkTestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNetworkTestService.h; sourceTree = "<group>"; };
-		760110D81BF9FF6000982091 /* YXNetworkTestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNetworkTestService.m; sourceTree = "<group>"; };
-		760110DA1BF9FF6000982091 /* YXHttpRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXHttpRequestHandler.h; sourceTree = "<group>"; };
-		760110DB1BF9FF6000982091 /* YXHttpRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXHttpRequestHandler.m; sourceTree = "<group>"; };
-		760110DC1BF9FF6000982091 /* YXHttpRequestParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXHttpRequestParam.h; sourceTree = "<group>"; };
-		760110DD1BF9FF6000982091 /* YXHttpRequestParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXHttpRequestParam.m; sourceTree = "<group>"; };
-		760110DE1BF9FF6000982091 /* YXRequestURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXRequestURL.h; sourceTree = "<group>"; };
-		760110DF1BF9FF6000982091 /* YXRequestURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXRequestURL.m; sourceTree = "<group>"; };
-		760110E91BFA001B00982091 /* YXModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXModel.h; sourceTree = "<group>"; };
-		760110EA1BFA001B00982091 /* YXModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXModel.m; sourceTree = "<group>"; };
+		760110D01BF9FF6000982091 /* WDNetworkService_RAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDNetworkService_RAC.h; sourceTree = "<group>"; };
+		760110D11BF9FF6000982091 /* WDNetworkService_RAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDNetworkService_RAC.m; sourceTree = "<group>"; };
+		760110D21BF9FF6000982091 /* WDNetworkTestService_RAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDNetworkTestService_RAC.h; sourceTree = "<group>"; };
+		760110D31BF9FF6000982091 /* WDNetworkTestService_RAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDNetworkTestService_RAC.m; sourceTree = "<group>"; };
+		760110D51BF9FF6000982091 /* WDNetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDNetworkService.h; sourceTree = "<group>"; };
+		760110D61BF9FF6000982091 /* WDNetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDNetworkService.m; sourceTree = "<group>"; };
+		760110D71BF9FF6000982091 /* WDNetworkTestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDNetworkTestService.h; sourceTree = "<group>"; };
+		760110D81BF9FF6000982091 /* WDNetworkTestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDNetworkTestService.m; sourceTree = "<group>"; };
+		760110DA1BF9FF6000982091 /* WDHttpRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHttpRequestHandler.h; sourceTree = "<group>"; };
+		760110DB1BF9FF6000982091 /* WDHttpRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHttpRequestHandler.m; sourceTree = "<group>"; };
+		760110DC1BF9FF6000982091 /* WDHttpRequestParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHttpRequestParam.h; sourceTree = "<group>"; };
+		760110DD1BF9FF6000982091 /* WDHttpRequestParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHttpRequestParam.m; sourceTree = "<group>"; };
+		760110DE1BF9FF6000982091 /* WDRequestURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDRequestURL.h; sourceTree = "<group>"; };
+		760110DF1BF9FF6000982091 /* WDRequestURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDRequestURL.m; sourceTree = "<group>"; };
+		760110E91BFA001B00982091 /* WDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDModel.h; sourceTree = "<group>"; };
+		760110EA1BFA001B00982091 /* WDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDModel.m; sourceTree = "<group>"; };
 		766E10341BF96D6800D18820 /* WDDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		766E10381BF96D6800D18820 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		766E103A1BF96D6800D18820 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +121,10 @@
 		766E105B1BF96D6800D18820 /* WDDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WDDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		766E105F1BF96D6800D18820 /* WDDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDDemoUITests.m; sourceTree = "<group>"; };
 		766E10611BF96D6800D18820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7671C52C1BFB290600DCA4FE /* WDNetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDNetworkViewController.h; sourceTree = "<group>"; };
+		7671C52D1BFB290600DCA4FE /* WDNetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDNetworkViewController.m; sourceTree = "<group>"; };
+		7671C52F1BFB291B00DCA4FE /* WDNetworkViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDNetworkViewModel.h; sourceTree = "<group>"; };
+		7671C5301BFB291B00DCA4FE /* WDNetworkViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDNetworkViewModel.m; sourceTree = "<group>"; };
 		CDF57370295AC2D676BD6BC2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FAB0BE7E17162B6745C1EE0C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -203,6 +209,7 @@
 		7601109B1BF9BC4500982091 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				7671C5281BFB26FD00DCA4FE /* AFNetworkTest */,
 				760110C11BF9CEEE00982091 /* CoreText */,
 				760110B51BF9C7F000982091 /* RACTest */,
 				760110A51BF9BD4C00982091 /* Basis */,
@@ -325,10 +332,10 @@
 			isa = PBXGroup;
 			children = (
 				760110CF1BF9FF6000982091 /* NetworkService_RAC */,
-				760110D51BF9FF6000982091 /* YXNetworkService.h */,
-				760110D61BF9FF6000982091 /* YXNetworkService.m */,
-				760110D71BF9FF6000982091 /* YXNetworkTestService.h */,
-				760110D81BF9FF6000982091 /* YXNetworkTestService.m */,
+				760110D51BF9FF6000982091 /* WDNetworkService.h */,
+				760110D61BF9FF6000982091 /* WDNetworkService.m */,
+				760110D71BF9FF6000982091 /* WDNetworkTestService.h */,
+				760110D81BF9FF6000982091 /* WDNetworkTestService.m */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -336,10 +343,10 @@
 		760110CF1BF9FF6000982091 /* NetworkService_RAC */ = {
 			isa = PBXGroup;
 			children = (
-				760110D01BF9FF6000982091 /* YXNetworkService_RAC.h */,
-				760110D11BF9FF6000982091 /* YXNetworkService_RAC.m */,
-				760110D21BF9FF6000982091 /* YXNetworkTestService_RAC.h */,
-				760110D31BF9FF6000982091 /* YXNetworkTestService_RAC.m */,
+				760110D01BF9FF6000982091 /* WDNetworkService_RAC.h */,
+				760110D11BF9FF6000982091 /* WDNetworkService_RAC.m */,
+				760110D21BF9FF6000982091 /* WDNetworkTestService_RAC.h */,
+				760110D31BF9FF6000982091 /* WDNetworkTestService_RAC.m */,
 			);
 			path = NetworkService_RAC;
 			sourceTree = "<group>";
@@ -347,12 +354,12 @@
 		760110D91BF9FF6000982091 /* NetworkTransport */ = {
 			isa = PBXGroup;
 			children = (
-				760110DA1BF9FF6000982091 /* YXHttpRequestHandler.h */,
-				760110DB1BF9FF6000982091 /* YXHttpRequestHandler.m */,
-				760110DC1BF9FF6000982091 /* YXHttpRequestParam.h */,
-				760110DD1BF9FF6000982091 /* YXHttpRequestParam.m */,
-				760110DE1BF9FF6000982091 /* YXRequestURL.h */,
-				760110DF1BF9FF6000982091 /* YXRequestURL.m */,
+				760110DA1BF9FF6000982091 /* WDHttpRequestHandler.h */,
+				760110DB1BF9FF6000982091 /* WDHttpRequestHandler.m */,
+				760110DC1BF9FF6000982091 /* WDHttpRequestParam.h */,
+				760110DD1BF9FF6000982091 /* WDHttpRequestParam.m */,
+				760110DE1BF9FF6000982091 /* WDRequestURL.h */,
+				760110DF1BF9FF6000982091 /* WDRequestURL.m */,
 			);
 			path = NetworkTransport;
 			sourceTree = "<group>";
@@ -360,8 +367,8 @@
 		760110E81BF9FFF900982091 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				760110E91BFA001B00982091 /* YXModel.h */,
-				760110EA1BFA001B00982091 /* YXModel.m */,
+				760110E91BFA001B00982091 /* WDModel.h */,
+				760110EA1BFA001B00982091 /* WDModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -433,6 +440,41 @@
 				766E10611BF96D6800D18820 /* Info.plist */,
 			);
 			path = WDDemoUITests;
+			sourceTree = "<group>";
+		};
+		7671C5281BFB26FD00DCA4FE /* AFNetworkTest */ = {
+			isa = PBXGroup;
+			children = (
+				7671C5291BFB273100DCA4FE /* Controller */,
+				7671C52A1BFB273100DCA4FE /* View */,
+				7671C52B1BFB273100DCA4FE /* ViewModel */,
+			);
+			path = AFNetworkTest;
+			sourceTree = "<group>";
+		};
+		7671C5291BFB273100DCA4FE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7671C52C1BFB290600DCA4FE /* WDNetworkViewController.h */,
+				7671C52D1BFB290600DCA4FE /* WDNetworkViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7671C52A1BFB273100DCA4FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7671C52B1BFB273100DCA4FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7671C52F1BFB291B00DCA4FE /* WDNetworkViewModel.h */,
+				7671C5301BFB291B00DCA4FE /* WDNetworkViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -621,26 +663,28 @@
 				766E103C1BF96D6800D18820 /* AppDelegate.m in Sources */,
 				760110951BF9BB0000982091 /* EXtensionUIImage.m in Sources */,
 				760110961BF9BB0000982091 /* NSString+Tool.m in Sources */,
+				7671C5311BFB291B00DCA4FE /* WDNetworkViewModel.m in Sources */,
 				760110C01BF9C8AE00982091 /* WDRACTestViewModel.m in Sources */,
-				760110E41BF9FF6000982091 /* YXNetworkTestService.m in Sources */,
-				760110E61BF9FF6000982091 /* YXHttpRequestParam.m in Sources */,
+				7671C52E1BFB290600DCA4FE /* WDNetworkViewController.m in Sources */,
+				760110E41BF9FF6000982091 /* WDNetworkTestService.m in Sources */,
+				760110E61BF9FF6000982091 /* WDHttpRequestParam.m in Sources */,
 				760110CA1BF9CF2E00982091 /* WDCoreTextViewModel.m in Sources */,
 				760110C71BF9CF1A00982091 /* WDCoreTextViewController.m in Sources */,
 				7601108A1BF9B26600982091 /* WDOpenSource.m in Sources */,
 				760110B11BF9BD4C00982091 /* WDTestViewController.m in Sources */,
 				760110BD1BF9C89700982091 /* WDRACTestViewController.m in Sources */,
-				760110E51BF9FF6000982091 /* YXHttpRequestHandler.m in Sources */,
+				760110E51BF9FF6000982091 /* WDHttpRequestHandler.m in Sources */,
 				766E10391BF96D6800D18820 /* main.m in Sources */,
-				760110EB1BFA001B00982091 /* YXModel.m in Sources */,
+				760110EB1BFA001B00982091 /* WDModel.m in Sources */,
 				766E10451BF96D6800D18820 /* WDDemo.xcdatamodeld in Sources */,
-				760110E31BF9FF6000982091 /* YXNetworkService.m in Sources */,
-				760110E11BF9FF6000982091 /* YXNetworkTestService_RAC.m in Sources */,
-				760110E01BF9FF6000982091 /* YXNetworkService_RAC.m in Sources */,
+				760110E31BF9FF6000982091 /* WDNetworkService.m in Sources */,
+				760110E11BF9FF6000982091 /* WDNetworkTestService_RAC.m in Sources */,
+				760110E01BF9FF6000982091 /* WDNetworkService_RAC.m in Sources */,
 				760110B01BF9BD4C00982091 /* WDViewModel.m in Sources */,
 				760110971BF9BB0000982091 /* UIColor+Tool.m in Sources */,
 				760110B41BF9BD7200982091 /* WDNavigationManager.m in Sources */,
 				760110981BF9BB0000982091 /* UIView+Tool.m in Sources */,
-				760110E71BF9FF6000982091 /* YXRequestURL.m in Sources */,
+				760110E71BF9FF6000982091 /* WDRequestURL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

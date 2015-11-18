@@ -1,5 +1,5 @@
 //
-//  YXHttpRequestParam.h
+//  WDHttpRequestParam.h
 //  AFNetWorkingDemo
 //
 //  Created by wd on 15/10/19.
@@ -7,19 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-typedef NS_ENUM (NSInteger, YXHttpMethodType) {
-    YXHttpMethodTypeGet,
-    YXHttpMethodTypePost,
-    YXHttpMethodTypePut,
-};
-@interface YXHttpRequestParam : NSObject
+#import "WDNetworkDefine.h"
+
+@interface WDHttpRequestParam : NSObject
 @property (strong, nonatomic) NSString* httpMethod;
 @property (strong, nonatomic) NSString* url;
 @property (readonly, nonatomic) NSMutableDictionary* params;
 @property (readonly, nonatomic) NSMutableDictionary* headers;
 @property (strong, nonatomic) NSString* tag;
 
-- (instancetype) initWithHttpMethodType: (YXHttpMethodType) type fullUrl: (NSString*) fullUrl;
+- (instancetype) initWithHttpMethodType: (WDHttpMethodType) type fullUrl: (NSString*) fullUrl;
 - (void) setParamValue: (id) value forKey: (NSString*) key;
 - (void) setRequestHeaderValue: (NSString*) value forKey: (NSString*) key;
 
@@ -32,8 +29,8 @@ typedef NS_ENUM (NSInteger, YXHttpMethodType) {
 
 @end
 
-@interface NSString (YXUrlPathExtensions)
+@interface NSString (WDUrlPathExtensions)
 
-- (NSString*) YXStringByAppendingUrlComponent: (NSString*) str;
+- (NSString*) WDStringByAppendingUrlComponent: (NSString*) str;
 
 @end
