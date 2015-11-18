@@ -11,6 +11,7 @@
 
 @interface WDNetworkTestService : WDNetworkService
 
+//post上传数据例子。还没有统一写。
 //- (WDHttpRequestHandler *)WD_requestUpdateImageWithImage:(UIImage *)image successBlock:(WDRequestSuccessBlock)success failureBlock:(WDRequestFailureBlock)failure;
 
 //block

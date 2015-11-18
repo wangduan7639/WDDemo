@@ -46,15 +46,38 @@ static AFHTTPRequestOperationManager * s_requestOperationManager = nil;
     
     urlRequest.timeoutInterval = self.timeOutSeconds;
     urlRequest.allHTTPHeaderFields = self.requestParam.headers;
-    
+    if (self.showHUD) {
+        [self startShowHUD];
+    }
     __weak typeof (self) weakSelf = self;
     _requestOperation = [s_requestOperationManager HTTPRequestOperationWithRequest: urlRequest success: ^(AFHTTPRequestOperation* operation, id responseObject){
+        [weakSelf dismissHUD];
         [weakSelf requestFinishSuccess:responseObject];
     } failure: ^(AFHTTPRequestOperation* operation, NSError* error){
+        [weakSelf dismissHUD];
         [weakSelf requestFinishFailure:error];
     }];
     _requestOperation.name = self.requestParam.url;
     [s_requestOperationManager.operationQueue addOperation: _requestOperation];
+}
+
+- (void)updateImageWithImage:(UIImage *)image
+{
+    if (!image) {
+        self.failureBlock([NSError errorWithDomain: @"mobile.hwk.yanxiu.com" code: -1 userInfo: @{ NSLocalizedDescriptionKey: @"空图像" }]);
+    }
+    
+    __weak typeof (self) weakSelf = self;
+    [s_requestOperationManager POST:[[NSURL URLWithString: self.requestParam.url] absoluteString] parameters:self.requestParam.params constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        NSString* imageName = [NSString stringWithFormat: @"image%d.jpg", (int) ([[NSDate date] timeIntervalSince1970] / 1)];
+        NSData* data = UIImageJPEGRepresentation (image, 1.0f);
+        [formData appendPartWithFileData: data name: @"user_img" fileName: imageName mimeType: @"image/jpg"];
+    } success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [weakSelf requestFinishSuccess:responseObject];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [weakSelf requestFinishFailure:error];
+    }];
+    
 }
 
 - (void)requestFinishSuccess:(id)responseObject
@@ -75,6 +98,7 @@ static AFHTTPRequestOperationManager * s_requestOperationManager = nil;
         }
     }
 }
+
 - (void)requestFinishFailure:(NSError *)error
 {
     if (self.failureBlock) {
@@ -88,29 +112,24 @@ static AFHTTPRequestOperationManager * s_requestOperationManager = nil;
     }
 
 }
-- (void)updateImageWithImage:(UIImage *)image
-{
-    if (!image) {
-        self.failureBlock([NSError errorWithDomain: @"mobile.hwk.yanxiu.com" code: -1 userInfo: @{ NSLocalizedDescriptionKey: @"空图像" }]);
-    }
-   
-    __weak typeof (self) weakSelf = self;
-    [s_requestOperationManager POST:[[NSURL URLWithString: self.requestParam.url] absoluteString] parameters:self.requestParam.params constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-        NSString* imageName = [NSString stringWithFormat: @"image%d.jpg", (int) ([[NSDate date] timeIntervalSince1970] / 1)];
-        NSData* data = UIImageJPEGRepresentation (image, 1.0f);
-        [formData appendPartWithFileData: data name: @"user_img" fileName: imageName mimeType: @"image/jpg"];
-    } success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        [weakSelf requestFinishSuccess:responseObject];
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        [weakSelf requestFinishFailure:error];
-    }];
 
-}
 - (void)cancel
 {
     if (_requestOperation) {
+        
         [_requestOperation cancel];
         _requestOperation = nil;
     }
+}
+
+- (void)startShowHUD
+{
+    UIView * view = (UIView*)[[[UIApplication sharedApplication]delegate]window];
+    [MBProgressHUD showHUDAddedTo:view animated:YES];
+}
+- (void)dismissHUD
+{
+    UIView * view = (UIView*)[[[UIApplication sharedApplication]delegate]window];
+    [MBProgressHUD hideHUDForView:view animated:YES];
 }
 @end

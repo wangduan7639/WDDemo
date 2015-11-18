@@ -16,6 +16,7 @@
 +(instancetype)defaultService;
 - (void)cancelWithRequestName:(NSString *)name;
 - (void)cancelAll;
+//网络监测。
 - (void)startMonitoring;
 - (WDHttpRequestHandler *)wd_httpRequestWithParam:(WDHttpRequestParam *)param
                                            target:(id)target
