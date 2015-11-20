@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '92F63196E7AA3D48116E8561'
+               BlueprintIdentifier = '1A7E75A86DCAD0202E8D8B8D'
                BlueprintName = 'NSString-HTML'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libNSString-HTML.a'>

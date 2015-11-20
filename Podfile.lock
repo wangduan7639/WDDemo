@@ -43,6 +43,15 @@ PODS:
     - DTFoundation/Core
   - DTFoundation/UIKit (1.7.8):
     - DTFoundation/Core
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - FMDBHelper (0.1.4):
+    - FMDB (= 2.5)
+  - FMDBHelpers (0.0.7):
+    - FMDB (~> 2.3)
   - JSONModel (1.1.0)
   - JSONModel-RACExtensions (0.2.1):
     - JSONModel (~> 1.x)
@@ -144,6 +153,9 @@ DEPENDENCIES:
   - AFNetworking-RACRetryExtensions (= 0.2.0)
   - CoreTextLabel (~> 1.5.13)
   - DTCoreText (~> 1.6.16)
+  - FMDB (~> 2.5)
+  - FMDBHelper (~> 0.1.4)
+  - FMDBHelpers (~> 0.0.7)
   - JSONModel (= 1.1.0)
   - JSONModel-RACExtensions (= 0.2.1)
   - Masonry (= 0.6.1)
@@ -171,6 +183,9 @@ SPEC CHECKSUMS:
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DTCoreText: 934a16fe9ffdd169c96261721b39dc312b75713d
   DTFoundation: 46e2b2fafe78d67febfd8d1f85fe9845a093f00e
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  FMDBHelper: 77278b126649c56ad5e78d102ff12b0aad2069b5
+  FMDBHelpers: c6bd06c59049d51d9072180f253b6ee53f695bf3
   JSONModel: ec77e9865236a7a09d9cf7668df6b4b328d9ec1d
   JSONModel-RACExtensions: 7549d365205a631d97533b5e103765816d0302e8
   Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'AAB3F62B04C65F9C5D2A69CF'
+               BlueprintIdentifier = '83B99C4029AC7699ECAB2239'
                BlueprintName = 'AFMacros'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libAFMacros.a'>

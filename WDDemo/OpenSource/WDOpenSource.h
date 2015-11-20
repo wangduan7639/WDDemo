@@ -44,6 +44,9 @@
 #import <UIGestureRecognizer+ReactiveCocoa/RACGestureRecognizerActionHandler.h>
 #import <CoreTextLabel/CoreTextLabel.h>
 #import <DTCoreText/DTCoreText.h>
+#import <FMDB/FMDB.h>
+#import <FMDBHelper/FMDBHelper.h>
+#import <FMDBHelpers/FMDBHelpers.h>
 
 @interface WDOpenSource : NSObject
 

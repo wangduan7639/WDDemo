@@ -11,5 +11,7 @@
 
 #import "WDCore.h"
 #import "WDOpenSource.h"
+#import "WDDebug.h"
+#import "WDFMDBManager.h"
 
 #endif /* PrefixHeader_pch */

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D684FED58273662F6F013BC2'
+               BlueprintIdentifier = 'C9787A05A035ED486C687D46'
                BlueprintName = 'NSString-UrlEncode'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libNSString-UrlEncode.a'>

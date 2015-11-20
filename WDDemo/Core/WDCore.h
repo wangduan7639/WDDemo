@@ -23,6 +23,10 @@
 #define FKTabBarHeight        49.0f
 #define OnePixelSeparatorHeight (((int) [[UIScreen mainScreen] scale]) ? 0.5 : 1.0)
 
+#define PATH_OF_APP_HOME    NSHomeDirectory()
+#define PATH_OF_TEMP        NSTemporaryDirectory()
+#define PATH_OF_DOCUMENT    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
+
 #define SHOW_ALERT(_msg_)  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:_msg_ delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];\
 [alert show];
 

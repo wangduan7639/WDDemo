@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'BBB2127DBABDE34834ACA7F2'
+               BlueprintIdentifier = '956D06BB398ED1D27D783A3F'
                BlueprintName = 'CoreTextLabel'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libCoreTextLabel.a'>
