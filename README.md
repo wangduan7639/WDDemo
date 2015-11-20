@@ -16,10 +16,10 @@ wangduan空闲时间研究的各种功能Demo汇总。
 * CoreText功能
 
 ###AFNetworkDemo
-* AFNetworkDemo功能
+* AFNetworking网络层封装（delegate,block,target-action(SEL)三种方式。）
 
 ###WebTest
-* WebTest功能
+* WebView功能
 
 ----后续会添加相应功能。
 
