@@ -137,61 +137,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WDDemo/GUI/CoreText/ViewController/WDHtmlViewController.m"
-            timestampString = "469520394.921513"
+            filePath = "WDDemo/GUI/CoreText/View/WDHtmlTableCell.m"
+            timestampString = "469685790.287159"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "-setupViews"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[WDHtmlViewController setupViews]"
-                  moduleName = "WDDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wd/Desktop/github/WDDemo/WDDemo/GUI/CoreText/ViewController/WDHtmlViewController.m"
-                  timestampString = "469520396.119098"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "2340">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__34-[WDHtmlViewController setupViews]_block_invoke85"
-                  moduleName = "WDDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wd/Desktop/github/WDDemo/WDDemo/GUI/CoreText/ViewController/WDHtmlViewController.m"
-                  timestampString = "469520396.119684"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "44">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pods/CoreTextLabel/CoreTextLabel.m"
-            timestampString = "469519766.060838"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "606"
-            endingLineNumber = "606"
-            landmarkName = "-drawRect:"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
+            landmarkName = "-attributedTextContentView:viewForAttributedString:frame:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -201,13 +153,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/CoreTextLabel/CoreTextLabel.m"
-            timestampString = "469520375.879547"
+            filePath = "WDDemo/GUI/CoreText/View/WDHtmlTableCell.m"
+            timestampString = "469685790.287159"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "487"
-            endingLineNumber = "487"
-            landmarkName = "-drawRect:"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "-attributedTextContentView:willDrawLayoutFrame:inContext:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -217,13 +169,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/CoreTextLabel/CoreTextLabel.m"
-            timestampString = "469520547.431376"
+            filePath = "WDDemo/GUI/CoreText/View/WDHtmlTableCell.m"
+            timestampString = "469685790.287159"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "630"
-            endingLineNumber = "630"
-            landmarkName = "-columnFrames"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "-attributedTextContentView:didDrawLayoutFrame:inContext:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -233,13 +185,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/CoreTextLabel/CoreTextLabel.m"
-            timestampString = "469520605.673931"
+            filePath = "WDDemo/GUI/CoreText/View/WDHtmlTableCell.m"
+            timestampString = "469685790.287159"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "613"
-            endingLineNumber = "613"
-            landmarkName = "-columnPaths"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "-attributedTextContentView:shouldDrawBackgroundForTextBlock:frame:context:forLayoutFrame:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -249,13 +201,61 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/CoreTextLabel/CoreTextLabel.m"
-            timestampString = "469520664.151501"
+            filePath = "WDDemo/GUI/CoreText/View/WDHtmlTableCell.m"
+            timestampString = "469685790.287159"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "625"
-            endingLineNumber = "625"
-            landmarkName = "-columnPaths"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "-attributedTextContentView:viewForAttachment:frame:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WDDemo/GUI/CoreText/View/WDHtmlTableCell.m"
+            timestampString = "469685790.287159"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
+            landmarkName = "-attributedTextContentView:viewForLink:identifier:frame:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WDDemo/GUI/CoreText/View/WDHtmlTableCell.m"
+            timestampString = "469685790.287159"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "241"
+            endingLineNumber = "241"
+            landmarkName = "-linkPushed:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WDDemo/GUI/CoreText/View/WDHtmlTableCell.m"
+            timestampString = "469685790.287159"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
+            landmarkName = "-linkLongPressed:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

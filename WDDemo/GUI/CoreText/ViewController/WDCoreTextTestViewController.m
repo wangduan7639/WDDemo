@@ -7,8 +7,13 @@
 //
 
 #import "WDCoreTextTestViewController.h"
+#import "WDHtmlTableItem.h"
 
-@interface WDCoreTextTestViewController ()
+@interface WDCoreTextTestViewController ()<RETableViewManagerDelegate>
+
+@property (nonatomic, strong) UITableView   *tableView;
+@property (nonatomic, strong) RETableViewManager    *tableViewManager;
+@property (nonatomic, strong) RETableViewSection    *tableViewSection;
 
 @end
 
@@ -19,19 +24,34 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupViews
+{
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero];
+    [self.view addSubview:self.tableView];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+    
+    self.tableViewManager = [[RETableViewManager alloc] initWithTableView:self.tableView delegate:self];
+    self.tableViewSection = [RETableViewSection section];
+    [self.tableViewManager addSection:self.tableViewSection];
+    self.tableViewManager[@"WDHtmlTableItem"] = @"WDHtmlTableCell";
+
+    
+    WDHtmlTableItem * item = [WDHtmlTableItem itemWithTitle:nil
+                                              accessoryType:UITableViewCellAccessoryNone
+                                           selectionHandler:^(RETableViewItem *item) {
+                                               
+                                           }];
+    item.htmlString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Sample" ofType:@"html"] encoding:NSUTF8StringEncoding error:nil];
+    [self.tableViewSection addItem:item];
+    
+    item = [WDHtmlTableItem itemWithTitle:nil accessoryType:UITableViewCellAccessoryNone selectionHandler:^(RETableViewItem *item) {
+        
+    }];
+    item.htmlString = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Image" ofType:@"html"] encoding:NSUTF8StringEncoding error:nil];
+    [self.tableViewSection addItem:item];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

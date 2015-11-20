@@ -20,4 +20,5 @@
  *得到一个UIColor，传入一个色值字符串例如（@"#233D5F"）
  */
 + (UIColor*) colorWithHexString: (NSString*) stringToConvert;
++ (UIColor *)colorWithHTMLName:(NSString *)name;
 @end

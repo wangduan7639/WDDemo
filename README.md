@@ -14,6 +14,8 @@ wangduan空闲时间研究的各种功能Demo汇总。
 
 ###CoreText
 * CoreText功能
+###AFNetworkDemo
+* AFNetworkDemo功能
 
 ----后续会添加相应功能。
 
