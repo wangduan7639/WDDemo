@@ -15,7 +15,7 @@
 @property (nonatomic, strong) UIViewController  * rootViewController;
 + (WDNavigationManager*)sharedManager;
 - (void)pushNavigationController: (UINavigationController*) navigationController;
-- (void)presentViewControllerView:(WDBaseViewController *)viewController;
+- (void)presentViewControllerView:(UIViewController *)viewController;
 - (UINavigationController*) dismissNavigationController;
-- (void)pushViewController:(WDBaseViewController *)viewController;
+- (void)pushViewController:(UIViewController *)viewController;
 @end

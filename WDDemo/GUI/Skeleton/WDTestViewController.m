@@ -17,6 +17,9 @@
 #import "WDCoreTextViewController.h"
 #import "WDCoreTextViewModel.h"
 
+#import "WDWebTestViewController.h"
+#import "WDWebTestViewModel.h"
+
 @interface WDTestViewController ()<RETableViewManagerDelegate>
 
 @property (nonatomic, strong) UITableView   *tableView;
@@ -80,6 +83,17 @@
                              cell.selected = NO;
                              WDCoreTextViewModel * viewModel = [[WDCoreTextViewModel alloc] init];
                              WDCoreTextViewController * viewController = [[WDCoreTextViewController alloc] initViewModel:viewModel];
+                             [[WDNavigationManager sharedManager] pushViewController:viewController];
+                         }];
+    [self.tableViewSection addItem:item];
+    item = [RETableViewItem itemWithTitle:@"WebTest"
+                            accessoryType:UITableViewCellAccessoryDisclosureIndicator
+                         selectionHandler:^(RETableViewItem *item) {
+                             @strongify(self);
+                             UITableViewCell * cell = [self.tableView cellForRowAtIndexPath:item.indexPath];
+                             cell.selected = NO;
+                             WDWebTestViewModel * viewModel = [[WDWebTestViewModel alloc] init];
+                             WDWebTestViewController * viewController = [[WDWebTestViewController alloc] initViewModel:viewModel];
                              [[WDNavigationManager sharedManager] pushViewController:viewController];
                          }];
     [self.tableViewSection addItem:item];

@@ -45,6 +45,9 @@
 		7671C53D1BFC332C00DCA4FE /* WDCoreTextTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7671C53C1BFC332C00DCA4FE /* WDCoreTextTestViewController.m */; };
 		7671C5431BFC4F7600DCA4FE /* WDCoreTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7671C5421BFC4F7600DCA4FE /* WDCoreTextLabel.m */; };
 		76A86B5B1BFED13B00580E9B /* Image.html in Resources */ = {isa = PBXBuildFile; fileRef = 76A86B5A1BFED13B00580E9B /* Image.html */; };
+		76A86B621BFEE4FF00580E9B /* WDWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A86B611BFEE4FF00580E9B /* WDWebViewViewController.m */; };
+		76A86B651BFEE57300580E9B /* WDWebTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A86B641BFEE57300580E9B /* WDWebTestViewController.m */; };
+		76A86B681BFEE58900580E9B /* WDWebTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A86B671BFEE58900580E9B /* WDWebTestViewModel.m */; };
 		76E7992E1BFDCF2F008DCD84 /* WDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E7992B1BFDCF2F008DCD84 /* WDTableViewCell.m */; };
 		76E7992F1BFDCF2F008DCD84 /* WDTableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E7992D1BFDCF2F008DCD84 /* WDTableViewItem.m */; };
 		76E799321BFDCFFA008DCD84 /* WDHtmlTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E799311BFDCFFA008DCD84 /* WDHtmlTableCell.m */; };
@@ -144,6 +147,12 @@
 		7671C5411BFC4F7600DCA4FE /* WDCoreTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDCoreTextLabel.h; sourceTree = "<group>"; };
 		7671C5421BFC4F7600DCA4FE /* WDCoreTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDCoreTextLabel.m; sourceTree = "<group>"; };
 		76A86B5A1BFED13B00580E9B /* Image.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Image.html; sourceTree = "<group>"; };
+		76A86B601BFEE4FF00580E9B /* WDWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDWebViewViewController.h; sourceTree = "<group>"; };
+		76A86B611BFEE4FF00580E9B /* WDWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDWebViewViewController.m; sourceTree = "<group>"; };
+		76A86B631BFEE57300580E9B /* WDWebTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDWebTestViewController.h; sourceTree = "<group>"; };
+		76A86B641BFEE57300580E9B /* WDWebTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDWebTestViewController.m; sourceTree = "<group>"; };
+		76A86B661BFEE58900580E9B /* WDWebTestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDWebTestViewModel.h; sourceTree = "<group>"; };
+		76A86B671BFEE58900580E9B /* WDWebTestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDWebTestViewModel.m; sourceTree = "<group>"; };
 		76E7992A1BFDCF2F008DCD84 /* WDTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTableViewCell.h; sourceTree = "<group>"; };
 		76E7992B1BFDCF2F008DCD84 /* WDTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDTableViewCell.m; sourceTree = "<group>"; };
 		76E7992C1BFDCF2F008DCD84 /* WDTableViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTableViewItem.h; sourceTree = "<group>"; };
@@ -236,6 +245,7 @@
 		7601109B1BF9BC4500982091 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				76A86B5C1BFEE4FF00580E9B /* WebTest */,
 				7671C5281BFB26FD00DCA4FE /* AFNetworkTest */,
 				760110C11BF9CEEE00982091 /* CoreText */,
 				760110B51BF9C7F000982091 /* RACTest */,
@@ -518,6 +528,43 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		76A86B5C1BFEE4FF00580E9B /* WebTest */ = {
+			isa = PBXGroup;
+			children = (
+				76A86B5D1BFEE4FF00580E9B /* Controller */,
+				76A86B5E1BFEE4FF00580E9B /* View */,
+				76A86B5F1BFEE4FF00580E9B /* ViewModel */,
+				76A86B601BFEE4FF00580E9B /* WDWebViewViewController.h */,
+				76A86B611BFEE4FF00580E9B /* WDWebViewViewController.m */,
+			);
+			path = WebTest;
+			sourceTree = "<group>";
+		};
+		76A86B5D1BFEE4FF00580E9B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				76A86B631BFEE57300580E9B /* WDWebTestViewController.h */,
+				76A86B641BFEE57300580E9B /* WDWebTestViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		76A86B5E1BFEE4FF00580E9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76A86B5F1BFEE4FF00580E9B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				76A86B661BFEE58900580E9B /* WDWebTestViewModel.h */,
+				76A86B671BFEE58900580E9B /* WDWebTestViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		76E799291BFDCF2F008DCD84 /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -715,8 +762,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				760110AF1BF9BD4C00982091 /* WDBaseViewController.m in Sources */,
+				76A86B651BFEE57300580E9B /* WDWebTestViewController.m in Sources */,
 				766E103C1BF96D6800D18820 /* AppDelegate.m in Sources */,
 				76E799351BFDD00F008DCD84 /* WDHtmlTableItem.m in Sources */,
+				76A86B681BFEE58900580E9B /* WDWebTestViewModel.m in Sources */,
 				760110951BF9BB0000982091 /* EXtensionUIImage.m in Sources */,
 				760110961BF9BB0000982091 /* NSString+Tool.m in Sources */,
 				76E799321BFDCFFA008DCD84 /* WDHtmlTableCell.m in Sources */,
@@ -731,6 +780,7 @@
 				76E7992F1BFDCF2F008DCD84 /* WDTableViewItem.m in Sources */,
 				760110C71BF9CF1A00982091 /* WDCoreTextViewController.m in Sources */,
 				7601108A1BF9B26600982091 /* WDOpenSource.m in Sources */,
+				76A86B621BFEE4FF00580E9B /* WDWebViewViewController.m in Sources */,
 				760110B11BF9BD4C00982091 /* WDTestViewController.m in Sources */,
 				760110BD1BF9C89700982091 /* WDRACTestViewController.m in Sources */,
 				760110E51BF9FF6000982091 /* WDHttpRequestHandler.m in Sources */,

@@ -48,7 +48,7 @@
     [self.navigationControllerStack addObject: navigationController];
 }
 
-- (void)presentViewControllerView:(WDBaseViewController *)viewController
+- (void)presentViewControllerView:(UIViewController *)viewController
 {
     UINavigationController* navigationController =
     [[UINavigationController alloc] initWithRootViewController: viewController];
@@ -65,7 +65,7 @@
     return navigationController;
 }
 
-- (void)pushViewController:(WDBaseViewController *)viewController
+- (void)pushViewController:(UIViewController *)viewController
 {
     [self.navigationController pushViewController:viewController animated:YES];
 }
