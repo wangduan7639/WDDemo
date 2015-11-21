@@ -11,7 +11,7 @@
 
 @interface WDFMDBManager : NSObject
 
-- (instancetype)instance;
++ (instancetype)instance;
 
 //使用sql语句创建一个table
 - (BOOL)createTable:(NSString *)sql;
@@ -37,17 +37,8 @@
  */
 - (BOOL)update:(NSString *)sql;
 
-/**
- *  Use @obj Update
- */
-- (BOOL)updateObject:(NSObject *)obj;
-
-/**
- *  Use @keyValues updated @table
- *
- *  @warning the default where is "id=?", so @keyValues must include "id"
- */
-- (BOOL)update:(NSString *)table keyValues:(NSDictionary *)keyValues;
+//use obj,where update
+- (BOOL)updateObject:(NSObject *)obj where:(NSString *)where;
 
 /**
  *  If the @where are met, use @keyValues updated @table
@@ -60,14 +51,9 @@
 - (BOOL)remove:(NSString *)table;
 
 /**
- *  Use @obj delete
+ *  Use @obj,where delete
  */
-- (BOOL)removeObject:(NSObject *)obj;
-
-/**
- *  Delete from @table where id=@id_
- */
-- (BOOL)removeById:(NSString *)id_ from:(NSString *)table;
+- (BOOL)removeObject:(NSObject *)obj where:(NSString *)where;
 
 /**
  *  Delete from @table @where
@@ -78,11 +64,6 @@
  *  Select * from @table
  */
 - (NSMutableArray *)query:(NSString *)table;
-
-/**
- *  Select * from @table where id=@id_
- */
-- (NSDictionary *)queryById:(NSString *)id_ from:(NSString *)table;
 
 /**
  *  Select * from @table @where

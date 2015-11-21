@@ -7,6 +7,7 @@
 //
 
 #import "WDFMDBManager.h"
+#import "NSObject+FMDB.h"
 @interface WDFMDBManager ()
 
 @property (nonatomic, copy) NSString    *dbPath;
@@ -95,19 +96,11 @@ static NSString *userDatabaseName = @"WD.sqlite";
     return [self executeUpdate:sql args:nil];
 }
 
-- (BOOL)updateObject:(NSObject *)obj
+- (BOOL)updateObject:(NSObject *)obj where:(NSString *)where
 {
-    NSAssert(obj, @"obj cannot be nil!");
+    NSAssert(obj && where, @"obj,where cannot be nil!");
     
-    return [self update:[[obj class] tableName] keyValues:[obj keyValues]];
-}
-
-- (BOOL)update:(NSString *)table keyValues:(NSDictionary *)keyValues
-{
-    NSAssert(table && keyValues, @"table or keyValues cannot be nil!");
-    NSAssert(keyValues[identifier], @"keyValues[@\"%@\"] cannot be nil!", identifier);
-    
-    return [self update:table keyValues:keyValues where:[NSString stringWithFormat:@"%@='%@'", identifier, keyValues[identifier]]];
+    return [self update:[[obj class] tableName] keyValues:[obj keyValues] where:where];
 }
 
 - (BOOL)update:(NSString *)table keyValues:(NSDictionary *)keyValues where:(NSString *)where
@@ -138,18 +131,11 @@ static NSString *userDatabaseName = @"WD.sqlite";
     return [self remove:table where:@"1=1"];
 }
 
-- (BOOL)removeObject:(NSObject *)obj
+- (BOOL)removeObject:(NSObject *)obj where:(NSString *)where
 {
-    NSAssert(obj, @"obj cannot be nil!");
+    NSAssert(obj && where, @"obj or where cannot be nil!");
     
-    return [self removeById:obj.ID from:[[obj class] tableName]];
-}
-
-- (BOOL)removeById:(NSString *)id_ from:(NSString *)table
-{
-    NSAssert(id_ && table, @"id_ or table cannot be nil!");
-    
-    return [self remove:table where:[NSString stringWithFormat:@"%@='%@'", identifier, id_]];
+    return [self remove:[[obj class] tableName] where:where];
 }
 
 - (BOOL)remove:(NSString *)table where:(NSString *)where
@@ -169,15 +155,6 @@ static NSString *userDatabaseName = @"WD.sqlite";
     NSAssert(table, @"table cannot be nil!");
     
     return [self query:table where:@"1=1", nil];
-}
-
-- (NSDictionary *)queryById:(NSString *)id_ from:(NSString *)table
-{
-    NSAssert(id_ && table, @"id_ or table cannot be nil!");
-    
-    NSMutableArray *result = [self query:table where:[NSString stringWithFormat:@"%@=?", identifier], id_, nil];
-    
-    return (result.count > 0) ? result.firstObject : nil;
 }
 
 - (NSMutableArray *)query:(NSString *)table where:(NSString *)where, ...
@@ -223,7 +200,7 @@ static NSString *userDatabaseName = @"WD.sqlite";
     FMDatabase *db = [FMDatabase databaseWithPath:self.dbPath];
     
     if ([db open]) {
-        FMResultSet *rs = [db executeQuery:[NSString stringWithFormat:@"SELECT COUNT(%@) totalRow FROM %@ WHERE %@", identifier, table, where]];
+        FMResultSet *rs = [db executeQuery:[NSString stringWithFormat:@"SELECT COUNT totalRow FROM %@ WHERE %@", table, where]];
         if ([rs next]) {
             totalRow = [[rs resultDictionary][@"totalRow"] integerValue];
         }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		515886281C007A030008025E /* NSObject+FMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 515886251C007A030008025E /* NSObject+FMDB.m */; };
+		515886291C007A030008025E /* WDUserTableCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 515886271C007A030008025E /* WDUserTableCommand.m */; };
 		62E792CFA03353A4EA70218E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB0BE7E17162B6745C1EE0C /* libPods.a */; };
 		760110861BF9AF7700982091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760110841BF9AF7700982091 /* LaunchScreen.storyboard */; };
 		7601108A1BF9B26600982091 /* WDOpenSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110891BF9B26600982091 /* WDOpenSource.m */; };
@@ -49,7 +51,6 @@
 		76A86B651BFEE57300580E9B /* WDWebTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A86B641BFEE57300580E9B /* WDWebTestViewController.m */; };
 		76A86B681BFEE58900580E9B /* WDWebTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A86B671BFEE58900580E9B /* WDWebTestViewModel.m */; };
 		76A86B6C1BFF184200580E9B /* WDFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A86B6B1BFF184200580E9B /* WDFMDBManager.m */; };
-		76A86B6F1BFF20CE00580E9B /* WDUserTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A86B6E1BFF20CE00580E9B /* WDUserTable.m */; };
 		76E7992E1BFDCF2F008DCD84 /* WDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E7992B1BFDCF2F008DCD84 /* WDTableViewCell.m */; };
 		76E7992F1BFDCF2F008DCD84 /* WDTableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E7992D1BFDCF2F008DCD84 /* WDTableViewItem.m */; };
 		76E799321BFDCFFA008DCD84 /* WDHtmlTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E799311BFDCFFA008DCD84 /* WDHtmlTableCell.m */; };
@@ -75,6 +76,10 @@
 
 /* Begin PBXFileReference section */
 		34A1BEE0333C6AC9BA06FA4D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		515886241C007A030008025E /* NSObject+FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FMDB.h"; sourceTree = "<group>"; };
+		515886251C007A030008025E /* NSObject+FMDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FMDB.m"; sourceTree = "<group>"; };
+		515886261C007A030008025E /* WDUserTableCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDUserTableCommand.h; sourceTree = "<group>"; };
+		515886271C007A030008025E /* WDUserTableCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDUserTableCommand.m; sourceTree = "<group>"; };
 		760110851BF9AF7700982091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		760110881BF9B26600982091 /* WDOpenSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDOpenSource.h; sourceTree = "<group>"; };
 		760110891BF9B26600982091 /* WDOpenSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDOpenSource.m; sourceTree = "<group>"; };
@@ -157,8 +162,6 @@
 		76A86B671BFEE58900580E9B /* WDWebTestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDWebTestViewModel.m; sourceTree = "<group>"; };
 		76A86B6A1BFF184200580E9B /* WDFMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDFMDBManager.h; sourceTree = "<group>"; };
 		76A86B6B1BFF184200580E9B /* WDFMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDFMDBManager.m; sourceTree = "<group>"; };
-		76A86B6D1BFF20CE00580E9B /* WDUserTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDUserTable.h; sourceTree = "<group>"; };
-		76A86B6E1BFF20CE00580E9B /* WDUserTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDUserTable.m; sourceTree = "<group>"; };
 		76E7992A1BFDCF2F008DCD84 /* WDTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTableViewCell.h; sourceTree = "<group>"; };
 		76E7992B1BFDCF2F008DCD84 /* WDTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDTableViewCell.m; sourceTree = "<group>"; };
 		76E7992C1BFDCF2F008DCD84 /* WDTableViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTableViewItem.h; sourceTree = "<group>"; };
@@ -575,10 +578,12 @@
 		76A86B691BFF016500580E9B /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
+				515886241C007A030008025E /* NSObject+FMDB.h */,
+				515886251C007A030008025E /* NSObject+FMDB.m */,
+				515886261C007A030008025E /* WDUserTableCommand.h */,
+				515886271C007A030008025E /* WDUserTableCommand.m */,
 				76A86B6A1BFF184200580E9B /* WDFMDBManager.h */,
 				76A86B6B1BFF184200580E9B /* WDFMDBManager.m */,
-				76A86B6D1BFF20CE00580E9B /* WDUserTable.h */,
-				76A86B6E1BFF20CE00580E9B /* WDUserTable.m */,
 			);
 			path = FMDB;
 			sourceTree = "<group>";
@@ -795,10 +800,12 @@
 				76E7992E1BFDCF2F008DCD84 /* WDTableViewCell.m in Sources */,
 				7671C53D1BFC332C00DCA4FE /* WDCoreTextTestViewController.m in Sources */,
 				760110CA1BF9CF2E00982091 /* WDCoreTextViewModel.m in Sources */,
+				515886281C007A030008025E /* NSObject+FMDB.m in Sources */,
 				76E7992F1BFDCF2F008DCD84 /* WDTableViewItem.m in Sources */,
 				760110C71BF9CF1A00982091 /* WDCoreTextViewController.m in Sources */,
 				7601108A1BF9B26600982091 /* WDOpenSource.m in Sources */,
 				76A86B621BFEE4FF00580E9B /* WDWebViewViewController.m in Sources */,
+				515886291C007A030008025E /* WDUserTableCommand.m in Sources */,
 				760110B11BF9BD4C00982091 /* WDTestViewController.m in Sources */,
 				760110BD1BF9C89700982091 /* WDRACTestViewController.m in Sources */,
 				760110E51BF9FF6000982091 /* WDHttpRequestHandler.m in Sources */,
@@ -811,7 +818,6 @@
 				76A86B6C1BFF184200580E9B /* WDFMDBManager.m in Sources */,
 				760110E01BF9FF6000982091 /* WDNetworkService_RAC.m in Sources */,
 				760110B01BF9BD4C00982091 /* WDViewModel.m in Sources */,
-				76A86B6F1BFF20CE00580E9B /* WDUserTable.m in Sources */,
 				760110971BF9BB0000982091 /* UIColor+Tool.m in Sources */,
 				7671C53A1BFC330F00DCA4FE /* WDHtmlViewController.m in Sources */,
 				760110B41BF9BD7200982091 /* WDNavigationManager.m in Sources */,
