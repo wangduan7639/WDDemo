@@ -20,6 +20,9 @@
 #import "WDWebTestViewController.h"
 #import "WDWebTestViewModel.h"
 
+#import "WDFMDBViewModel.h"
+#import "WDFMDBTestViewController.h"
+
 @interface WDTestViewController ()<RETableViewManagerDelegate>
 
 @property (nonatomic, strong) UITableView   *tableView;
@@ -94,6 +97,18 @@
                              cell.selected = NO;
                              WDWebTestViewModel * viewModel = [[WDWebTestViewModel alloc] init];
                              WDWebTestViewController * viewController = [[WDWebTestViewController alloc] initViewModel:viewModel];
+                             [[WDNavigationManager sharedManager] pushViewController:viewController];
+                         }];
+    [self.tableViewSection addItem:item];
+    
+    item = [RETableViewItem itemWithTitle:@"FMDBTest"
+                            accessoryType:UITableViewCellAccessoryDisclosureIndicator
+                         selectionHandler:^(RETableViewItem *item) {
+                             @strongify(self);
+                             UITableViewCell * cell = [self.tableView cellForRowAtIndexPath:item.indexPath];
+                             cell.selected = NO;
+                             WDFMDBViewModel * viewModel = [[WDFMDBViewModel alloc] init];
+                             WDFMDBTestViewController * viewController = [[WDFMDBTestViewController alloc] initViewModel:viewModel];
                              [[WDNavigationManager sharedManager] pushViewController:viewController];
                          }];
     [self.tableViewSection addItem:item];

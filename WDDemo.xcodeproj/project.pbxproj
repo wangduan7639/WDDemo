@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51275D3B1C01F69000B0687B /* WDFMDBTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51275D3A1C01F69000B0687B /* WDFMDBTestViewController.m */; };
+		51275D3E1C01F6B400B0687B /* WDFMDBViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51275D3D1C01F6B400B0687B /* WDFMDBViewModel.m */; };
+		51275D441C01F72900B0687B /* WDFMDBTableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 51275D431C01F72900B0687B /* WDFMDBTableViewItem.m */; };
+		51275D471C01F75C00B0687B /* WDFMDBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51275D461C01F75C00B0687B /* WDFMDBTableViewCell.m */; };
+		51275D4A1C02020F00B0687B /* WDFMDBAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51275D491C02020F00B0687B /* WDFMDBAddViewController.m */; };
 		515886281C007A030008025E /* NSObject+FMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 515886251C007A030008025E /* NSObject+FMDB.m */; };
 		515886291C007A030008025E /* WDUserTableCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 515886271C007A030008025E /* WDUserTableCommand.m */; };
 		62E792CFA03353A4EA70218E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB0BE7E17162B6745C1EE0C /* libPods.a */; };
@@ -76,6 +81,16 @@
 
 /* Begin PBXFileReference section */
 		34A1BEE0333C6AC9BA06FA4D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		51275D391C01F69000B0687B /* WDFMDBTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDFMDBTestViewController.h; sourceTree = "<group>"; };
+		51275D3A1C01F69000B0687B /* WDFMDBTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDFMDBTestViewController.m; sourceTree = "<group>"; };
+		51275D3C1C01F6B400B0687B /* WDFMDBViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDFMDBViewModel.h; sourceTree = "<group>"; };
+		51275D3D1C01F6B400B0687B /* WDFMDBViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDFMDBViewModel.m; sourceTree = "<group>"; };
+		51275D421C01F72900B0687B /* WDFMDBTableViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDFMDBTableViewItem.h; sourceTree = "<group>"; };
+		51275D431C01F72900B0687B /* WDFMDBTableViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDFMDBTableViewItem.m; sourceTree = "<group>"; };
+		51275D451C01F75C00B0687B /* WDFMDBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDFMDBTableViewCell.h; sourceTree = "<group>"; };
+		51275D461C01F75C00B0687B /* WDFMDBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDFMDBTableViewCell.m; sourceTree = "<group>"; };
+		51275D481C02020F00B0687B /* WDFMDBAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDFMDBAddViewController.h; sourceTree = "<group>"; };
+		51275D491C02020F00B0687B /* WDFMDBAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDFMDBAddViewController.m; sourceTree = "<group>"; };
 		515886241C007A030008025E /* NSObject+FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FMDB.h"; sourceTree = "<group>"; };
 		515886251C007A030008025E /* NSObject+FMDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FMDB.m"; sourceTree = "<group>"; };
 		515886261C007A030008025E /* WDUserTableCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDUserTableCommand.h; sourceTree = "<group>"; };
@@ -217,6 +232,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		51275D351C01F67700B0687B /* FMDBTest */ = {
+			isa = PBXGroup;
+			children = (
+				51275D361C01F67700B0687B /* Controller */,
+				51275D371C01F67700B0687B /* ViewModel */,
+				51275D381C01F67700B0687B /* Views */,
+			);
+			path = FMDBTest;
+			sourceTree = "<group>";
+		};
+		51275D361C01F67700B0687B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				51275D391C01F69000B0687B /* WDFMDBTestViewController.h */,
+				51275D3A1C01F69000B0687B /* WDFMDBTestViewController.m */,
+				51275D481C02020F00B0687B /* WDFMDBAddViewController.h */,
+				51275D491C02020F00B0687B /* WDFMDBAddViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		51275D371C01F67700B0687B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				51275D3C1C01F6B400B0687B /* WDFMDBViewModel.h */,
+				51275D3D1C01F6B400B0687B /* WDFMDBViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		51275D381C01F67700B0687B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				51275D421C01F72900B0687B /* WDFMDBTableViewItem.h */,
+				51275D431C01F72900B0687B /* WDFMDBTableViewItem.m */,
+				51275D451C01F75C00B0687B /* WDFMDBTableViewCell.h */,
+				51275D461C01F75C00B0687B /* WDFMDBTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		760110871BF9B23D00982091 /* OpenSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +310,7 @@
 		7601109B1BF9BC4500982091 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				51275D351C01F67700B0687B /* FMDBTest */,
 				76A86B5C1BFEE4FF00580E9B /* WebTest */,
 				7671C5281BFB26FD00DCA4FE /* AFNetworkTest */,
 				760110C11BF9CEEE00982091 /* CoreText */,
@@ -784,9 +841,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51275D3B1C01F69000B0687B /* WDFMDBTestViewController.m in Sources */,
 				760110AF1BF9BD4C00982091 /* WDBaseViewController.m in Sources */,
 				76A86B651BFEE57300580E9B /* WDWebTestViewController.m in Sources */,
 				766E103C1BF96D6800D18820 /* AppDelegate.m in Sources */,
+				51275D4A1C02020F00B0687B /* WDFMDBAddViewController.m in Sources */,
 				76E799351BFDD00F008DCD84 /* WDHtmlTableItem.m in Sources */,
 				76A86B681BFEE58900580E9B /* WDWebTestViewModel.m in Sources */,
 				760110951BF9BB0000982091 /* EXtensionUIImage.m in Sources */,
@@ -800,6 +859,8 @@
 				76E7992E1BFDCF2F008DCD84 /* WDTableViewCell.m in Sources */,
 				7671C53D1BFC332C00DCA4FE /* WDCoreTextTestViewController.m in Sources */,
 				760110CA1BF9CF2E00982091 /* WDCoreTextViewModel.m in Sources */,
+				51275D441C01F72900B0687B /* WDFMDBTableViewItem.m in Sources */,
+				51275D471C01F75C00B0687B /* WDFMDBTableViewCell.m in Sources */,
 				515886281C007A030008025E /* NSObject+FMDB.m in Sources */,
 				76E7992F1BFDCF2F008DCD84 /* WDTableViewItem.m in Sources */,
 				760110C71BF9CF1A00982091 /* WDCoreTextViewController.m in Sources */,
@@ -808,6 +869,7 @@
 				515886291C007A030008025E /* WDUserTableCommand.m in Sources */,
 				760110B11BF9BD4C00982091 /* WDTestViewController.m in Sources */,
 				760110BD1BF9C89700982091 /* WDRACTestViewController.m in Sources */,
+				51275D3E1C01F6B400B0687B /* WDFMDBViewModel.m in Sources */,
 				760110E51BF9FF6000982091 /* WDHttpRequestHandler.m in Sources */,
 				766E10391BF96D6800D18820 /* main.m in Sources */,
 				760110EB1BFA001B00982091 /* WDModel.m in Sources */,

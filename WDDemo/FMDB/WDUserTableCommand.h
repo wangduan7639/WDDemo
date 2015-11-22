@@ -13,7 +13,6 @@
 
 @property (nonatomic, copy) NSString    *userId;
 @property (nonatomic, copy) NSString    *userName;
-@property (nonatomic, strong) NSNumber    *userNumber;
 @property (nonatomic, copy) NSString    *userDesc;
 
 + (NSString *)tableName;
