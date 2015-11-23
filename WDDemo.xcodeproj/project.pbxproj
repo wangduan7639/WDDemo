@@ -37,6 +37,10 @@
 		760110E61BF9FF6000982091 /* WDHttpRequestParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110DD1BF9FF6000982091 /* WDHttpRequestParam.m */; };
 		760110E71BF9FF6000982091 /* WDRequestURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110DF1BF9FF6000982091 /* WDRequestURL.m */; };
 		760110EB1BFA001B00982091 /* WDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 760110EA1BFA001B00982091 /* WDModel.m */; };
+		760DEEE11C0315360029FF28 /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 760DEEE01C0315360029FF28 /* demo.js */; };
+		760DEEE41C0316390029FF28 /* WDJSPatchTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760DEEE31C0316390029FF28 /* WDJSPatchTestViewController.m */; };
+		760DEEE61C03170D0029FF28 /* Test.js in Resources */ = {isa = PBXBuildFile; fileRef = 760DEEE51C03170D0029FF28 /* Test.js */; };
+		760DEEE91C031AAE0029FF28 /* WDJSPatchTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 760DEEE81C031AAE0029FF28 /* WDJSPatchTestViewModel.m */; };
 		766E10391BF96D6800D18820 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 766E10381BF96D6800D18820 /* main.m */; };
 		766E103C1BF96D6800D18820 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 766E103B1BF96D6800D18820 /* AppDelegate.m */; };
 		766E10421BF96D6800D18820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 766E10401BF96D6800D18820 /* Main.storyboard */; };
@@ -142,6 +146,12 @@
 		760110DF1BF9FF6000982091 /* WDRequestURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDRequestURL.m; sourceTree = "<group>"; };
 		760110E91BFA001B00982091 /* WDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDModel.h; sourceTree = "<group>"; };
 		760110EA1BFA001B00982091 /* WDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDModel.m; sourceTree = "<group>"; };
+		760DEEE01C0315360029FF28 /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
+		760DEEE21C0316390029FF28 /* WDJSPatchTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDJSPatchTestViewController.h; sourceTree = "<group>"; };
+		760DEEE31C0316390029FF28 /* WDJSPatchTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDJSPatchTestViewController.m; sourceTree = "<group>"; };
+		760DEEE51C03170D0029FF28 /* Test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test.js; sourceTree = "<group>"; };
+		760DEEE71C031AAE0029FF28 /* WDJSPatchTestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDJSPatchTestViewModel.h; sourceTree = "<group>"; };
+		760DEEE81C031AAE0029FF28 /* WDJSPatchTestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDJSPatchTestViewModel.m; sourceTree = "<group>"; };
 		766E10341BF96D6800D18820 /* WDDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		766E10381BF96D6800D18820 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		766E103A1BF96D6800D18820 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -310,6 +320,7 @@
 		7601109B1BF9BC4500982091 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				760DEEDC1C0314D60029FF28 /* JSPatchTest */,
 				51275D351C01F67700B0687B /* FMDBTest */,
 				76A86B5C1BFEE4FF00580E9B /* WebTest */,
 				7671C5281BFB26FD00DCA4FE /* AFNetworkTest */,
@@ -488,6 +499,43 @@
 				760110EA1BFA001B00982091 /* WDModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		760DEEDC1C0314D60029FF28 /* JSPatchTest */ = {
+			isa = PBXGroup;
+			children = (
+				760DEEE51C03170D0029FF28 /* Test.js */,
+				760DEEE01C0315360029FF28 /* demo.js */,
+				760DEEDD1C0314D60029FF28 /* Controller */,
+				760DEEDE1C0314D60029FF28 /* View */,
+				760DEEDF1C0314D60029FF28 /* ViewModel */,
+			);
+			path = JSPatchTest;
+			sourceTree = "<group>";
+		};
+		760DEEDD1C0314D60029FF28 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				760DEEE21C0316390029FF28 /* WDJSPatchTestViewController.h */,
+				760DEEE31C0316390029FF28 /* WDJSPatchTestViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		760DEEDE1C0314D60029FF28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		760DEEDF1C0314D60029FF28 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				760DEEE71C031AAE0029FF28 /* WDJSPatchTestViewModel.h */,
+				760DEEE81C031AAE0029FF28 /* WDJSPatchTestViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		766E102B1BF96D6800D18820 = {
@@ -765,10 +813,12 @@
 			files = (
 				7671C5371BFC30B300DCA4FE /* File.rtf in Resources */,
 				7671C5351BFC307D00DCA4FE /* Sample.html in Resources */,
+				760DEEE61C03170D0029FF28 /* Test.js in Resources */,
 				760110861BF9AF7700982091 /* LaunchScreen.storyboard in Resources */,
 				766E10471BF96D6800D18820 /* Assets.xcassets in Resources */,
 				76A86B5B1BFED13B00580E9B /* Image.html in Resources */,
 				766E10421BF96D6800D18820 /* Main.storyboard in Resources */,
+				760DEEE11C0315360029FF28 /* demo.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,7 +934,9 @@
 				7671C53A1BFC330F00DCA4FE /* WDHtmlViewController.m in Sources */,
 				760110B41BF9BD7200982091 /* WDNavigationManager.m in Sources */,
 				760110981BF9BB0000982091 /* UIView+Tool.m in Sources */,
+				760DEEE91C031AAE0029FF28 /* WDJSPatchTestViewModel.m in Sources */,
 				760110E71BF9FF6000982091 /* WDRequestURL.m in Sources */,
+				760DEEE41C0316390029FF28 /* WDJSPatchTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

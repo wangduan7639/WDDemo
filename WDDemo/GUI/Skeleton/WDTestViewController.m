@@ -112,6 +112,21 @@
                              [[WDNavigationManager sharedManager] pushViewController:viewController];
                          }];
     [self.tableViewSection addItem:item];
+    
+    item = [RETableViewItem itemWithTitle:@"JSPatchTest"
+                            accessoryType:UITableViewCellAccessoryDisclosureIndicator
+                         selectionHandler:^(RETableViewItem *item) {
+                             @strongify(self);
+                             UITableViewCell * cell = [self.tableView cellForRowAtIndexPath:item.indexPath];
+                             cell.selected = NO;
+                             [self gotoJSPatchTest];
+                         }];
+    [self.tableViewSection addItem:item];
+}
+
+- (void)gotoJSPatchTest
+{
+    
 }
 
 @end

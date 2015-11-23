@@ -46,6 +46,7 @@
 #import <DTCoreText/DTCoreText.h>
 #import <FMDB/FMDB.h>
 #import <FMDBHelpers/FMDBHelpers.h>
+#import <JSPatch/JPEngine.h>
 
 @interface WDOpenSource : NSObject
 
