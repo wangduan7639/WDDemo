@@ -24,6 +24,10 @@ pod 'DTCoreText', '~> 1.6.16'
 pod 'CoreTextLabel', '~> 1.5.13'
 pod 'FMDB', '~> 2.5'
 pod 'FMDBHelpers', '~> 0.0.7'
+pod 'JSPatch', '~> 0.1.4'
+pod 'JSPatch/Extensions', '~> 0.1.4'
+pod 'JSPatch/Core', '~> 0.1.4'
+
 
 post_install do |installer|
     installer.pods_project.targets.each do |target|

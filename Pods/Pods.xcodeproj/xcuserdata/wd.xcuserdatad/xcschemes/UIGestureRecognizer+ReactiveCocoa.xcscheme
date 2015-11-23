@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '15C7F1CC3FF5B303E1036EB3'
+               BlueprintIdentifier = 'E2CAC2C485C472F340D54D85'
                BlueprintName = 'UIGestureRecognizer+ReactiveCocoa'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libUIGestureRecognizer+ReactiveCocoa.a'>

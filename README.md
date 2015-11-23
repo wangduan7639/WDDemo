@@ -21,6 +21,9 @@ wangduan空闲时间研究的各种功能Demo汇总。
 ###WebTest
 * WebView功能
 
+###FMDBTest
+* 数据库相关功能和框架搭建。
+
 ----后续会添加相应功能。
 
 #Use CocoaPods Manager Open source Librarys
@@ -53,5 +56,5 @@ wangduan空闲时间研究的各种功能Demo汇总。
 * [CoreTextLabel](https://github.com/appfarms/CoreTextLabel.git)
 * [DTCoreText](https://github.com/Cocoanetics/DTCoreText.git)
 * [FMDB](https://github.com/ccgus/fmdb.git)
-* [FMDBHelper](https://github.com/lijingcheng/FMDBHelper.git)
 * [FMDBHelpers](https://github.com/nerdyc/FMDBHelpers.git)
+* [JSPatch](https://github.com/bang590/JSPatch.git)

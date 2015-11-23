@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1DBE53F66E21BFD8985BA729'
-               BlueprintName = 'FMDBHelper-FMDBHelper'
+               BlueprintIdentifier = 'B795BA994F10221A57C88854'
+               BlueprintName = 'JSPatch'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'FMDBHelper.bundle'>
+               BuildableName = 'libJSPatch.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

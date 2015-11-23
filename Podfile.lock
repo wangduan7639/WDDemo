@@ -54,6 +54,11 @@ PODS:
   - JSONModel-RACExtensions (0.2.1):
     - JSONModel (~> 1.x)
     - ReactiveCocoa (~> 2.x)
+  - JSPatch (0.1.4):
+    - JSPatch/Core (= 0.1.4)
+  - JSPatch/Core (0.1.4)
+  - JSPatch/Extensions (0.1.4):
+    - JSPatch/Core
   - Masonry (0.6.1)
   - MBProgressHUD (0.9.1)
   - MWPhotoBrowser (2.1.1):
@@ -155,6 +160,9 @@ DEPENDENCIES:
   - FMDBHelpers (~> 0.0.7)
   - JSONModel (= 1.1.0)
   - JSONModel-RACExtensions (= 0.2.1)
+  - JSPatch (~> 0.1.4)
+  - JSPatch/Core (~> 0.1.4)
+  - JSPatch/Extensions (~> 0.1.4)
   - Masonry (= 0.6.1)
   - MWPhotoBrowser (= 2.1.1)
   - Nimbus (~> 1.2.0)
@@ -184,6 +192,7 @@ SPEC CHECKSUMS:
   FMDBHelpers: c6bd06c59049d51d9072180f253b6ee53f695bf3
   JSONModel: ec77e9865236a7a09d9cf7668df6b4b328d9ec1d
   JSONModel-RACExtensions: 7549d365205a631d97533b5e103765816d0302e8
+  JSPatch: f78a86fcee5ce59a7acb22fdeb77a240b150406e
   Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MWPhotoBrowser: ba0d0c09ffda3a7ea10093518738c502c1c7141c

@@ -58,6 +58,7 @@ install_resource()
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "JSPatch/JSPatch/JSPatch.js"
   install_resource "Nimbus/src/overview/resources/NimbusOverviewer.bundle"
   install_resource "Nimbus/src/photos/resources/NimbusPhotos.bundle"
   install_resource "Nimbus/src/webcontroller/resources/NimbusWebController.bundle"
@@ -67,6 +68,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${BUILT_PRODUCTS_DIR}/RETableViewManager.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "JSPatch/JSPatch/JSPatch.js"
   install_resource "Nimbus/src/overview/resources/NimbusOverviewer.bundle"
   install_resource "Nimbus/src/photos/resources/NimbusPhotos.bundle"
   install_resource "Nimbus/src/webcontroller/resources/NimbusWebController.bundle"

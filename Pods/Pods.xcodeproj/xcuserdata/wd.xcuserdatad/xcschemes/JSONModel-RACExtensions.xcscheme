@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '715BB4F7E4804F365EDCDBA1'
+               BlueprintIdentifier = '6B42A736A29B181FCACA658D'
                BlueprintName = 'JSONModel-RACExtensions'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libJSONModel-RACExtensions.a'>

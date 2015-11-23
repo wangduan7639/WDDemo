@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '314713AE940F8EFB6D90C505'
+               BlueprintIdentifier = '2DE86216606541BF7D8B01AE'
                BlueprintName = 'NSString-Helper-NSString-Helper'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'NSString-Helper.bundle'>
