@@ -7,6 +7,7 @@
 //
 
 #import "WDUserTableCommand.h"
+#import "NSObject+FMDB.h"
 
 @implementation WDUserTable
 
@@ -19,5 +20,24 @@
 
 @implementation WDUserTableCommand
 
+- (instancetype)init
+{
+    if (self = [super init]) {
+        [self createWDUserTable];
+    }
+    return self;
+}
 
+- (BOOL)createWDUserTable
+{
+    if ([self tableExists:[WDUserTable tableName]]) {
+        return YES;
+    }
+    NSString *sql = [[NSString alloc] initWithFormat:@"CREATE TABLE '%@'('userId' VARCHAR(30) , 'userName' VARCHAR(64) , 'userDesc' VARCHAR(255))", [WDUserTable tableName]];
+    return [self createTable:sql];
+}
+- (BOOL)removeObject:(WDUserTable *)obj
+{
+    return [self removeObject:obj where:[NSString stringWithFormat:@"%@='%@'", @"userId", obj.userId]];
+}
 @end

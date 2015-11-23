@@ -51,19 +51,37 @@
     
     UIBarButtonItem * rightItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:nil action:nil];
     self.navigationItem.rightBarButtonItem = rightItem;
-    rightItem.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
-        //TODO
-        return [RACSignal empty];
-    }];
+    rightItem.rac_command = self.viewModel.addCommand;
 }
 
 - (void)setupViewModel
 {
     [super setupViewModel];
+    @weakify(self);
     RAC(self,title) = RACObserve(self.viewModel, title);
-    [[[RACObserve(self.viewModel, userArray) switchToLatest] deliverOnMainThread] subscribeNext:^(NSArray * array) {
-        //TODO
+    [[RACObserve(self.viewModel, userArray) deliverOnMainThread] subscribeNext:^(NSArray * array) {
+        @strongify(self);
+        [self.tableViewSection removeAllItems];
+        [self addItems:array toSection:self.tableViewSection];
+        [self.tableViewSection reloadSectionWithAnimation:UITableViewRowAnimationNone];
     }];
+}
+
+- (void)addItems:(NSArray *)models toSection:(RETableViewSection *)section
+{
+    if (models && [models count] > 0) {
+        [models enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            WDUserTable * user = obj;
+            WDFMDBTableViewItem * item = [[WDFMDBTableViewItem alloc] init];
+            item.selectionStyle = UITableViewCellSelectionStyleNone;
+            item.editingStyle = UITableViewCellEditingStyleDelete;
+            item.user = user;
+            item.deletionHandler = ^(WDFMDBTableViewItem * wdItem){
+                [self.viewModel deleteUser:wdItem.user];
+            };
+            [section addItem:item];
+        }];
+    }
 }
 
 @end

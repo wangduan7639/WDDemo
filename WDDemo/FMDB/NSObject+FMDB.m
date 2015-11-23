@@ -26,13 +26,14 @@
                 NSString *useKey = mapping[key] ? : key;
                 
                 if ([obj isKindOfClass:[NSString class]]) {
-                    NSError *error = nil;
+//                    NSError *error = nil;
+//                    
+//                    id jsonObject = [NSJSONSerialization JSONObjectWithData:[obj dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingAllowFragments error:&error];
+//                    
+//                    if (!error) {
+//                        obj = jsonObject;
+//                    }
                     
-                    id jsonObject = [NSJSONSerialization JSONObjectWithData:[obj dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingAllowFragments error:&error];
-                    
-                    if (!error) {
-                        obj = jsonObject;
-                    }
                 }
                 
                 if ([obj isKindOfClass:[NSNumber class]]) {
@@ -52,13 +53,12 @@
                             }
                         }
                     }
-                    
-                    if ([obj isKindOfClass:[NSDictionary class]] && objectPropertys[useKey]) {
-                        [dict setObject:[[objectPropertys[useKey] alloc] initWithDictionary:obj] forKey:useKey];
-                    }
-                    else {
-                        [dict setObject:obj forKey:useKey];
-                    }
+                }
+                if ([obj isKindOfClass:[NSDictionary class]] && objectPropertys[useKey]) {
+                    [dict setObject:[[objectPropertys[useKey] alloc] initWithDictionary:obj] forKey:useKey];
+                }
+                else {
+                    [dict setObject:obj forKey:useKey];
                 }
             }
         }];

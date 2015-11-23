@@ -20,4 +20,7 @@
 
 @interface WDUserTableCommand : WDFMDBManager
 
+- (BOOL)createWDUserTable;
+- (BOOL)removeObject:(WDUserTable *)obj;
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "WDFMDBTableViewCell.h"
+#import "WDFMDBTableViewItem.h"
 
 @interface WDFMDBTableViewCell ()
 
@@ -61,6 +62,10 @@
 - (void) cellWillAppear
 {
     [super cellWillAppear];
+    WDFMDBTableViewItem * item = (WDFMDBTableViewItem *)self.item;
+    self.idLabel.text = [NSString stringWithFormat:@"userID: %@",item.user.userId];
+    self.nameLabel.text = [NSString stringWithFormat:@"userName: %@",item.user.userName];
+    self.descLabel.text = [NSString stringWithFormat:@"userDesc: %@",item.user.userDesc];
 }
 
 

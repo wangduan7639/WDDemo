@@ -12,6 +12,7 @@
 @interface WDFMDBManager : NSObject
 
 + (instancetype)instance;
+- (BOOL)tableExists:(NSString *)tableName;
 
 //使用sql语句创建一个table
 - (BOOL)createTable:(NSString *)sql;

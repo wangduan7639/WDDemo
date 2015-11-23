@@ -21,7 +21,7 @@ static NSString *userDatabaseName = @"WD.sqlite";
     static WDFMDBManager *_sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedInstance = [[WDFMDBManager alloc] init];
+        _sharedInstance = [[[self class] alloc] init];
     });
     
     return _sharedInstance;
@@ -36,6 +36,21 @@ static NSString *userDatabaseName = @"WD.sqlite";
         _dbPath = path;
     }
     return self;
+}
+
+- (BOOL)tableExists:(NSString *)tableName
+{
+    BOOL exists = NO;
+    FMDatabase *db = [FMDatabase databaseWithPath:self.dbPath];
+    
+    if ([db open]) {
+        FMResultSet *rs = [db executeQuery:@"SELECT name FROM SQLITE_MASTER WHERE name = ? and type = ?", tableName, @"table"];
+        exists = [rs next];
+        [db close];
+    }
+    
+    db = nil;
+    return exists;
 }
 
 - (BOOL)createTable:(NSString *)sql

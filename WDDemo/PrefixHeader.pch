@@ -13,5 +13,6 @@
 #import "WDOpenSource.h"
 #import "WDDebug.h"
 #import "WDFMDBManager.h"
+#import "NSObject+FMDB.h"
 
 #endif /* PrefixHeader_pch */

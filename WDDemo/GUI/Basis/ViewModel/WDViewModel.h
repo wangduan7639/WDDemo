@@ -14,4 +14,5 @@
 @property (nonatomic, strong)WDNavigationManager    *navigationManager;
 @property (nonatomic, copy)NSString     *title;
 
+
 @end
