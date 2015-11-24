@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "WDTestViewController.h"
 #import "WDNavigationManager.h"
+#import "WDReceiveWatchEngine.h"
 
 @interface AppDelegate ()
 
@@ -145,6 +146,46 @@
             abort();
         }
     }
+}
+
+#pragma mark - Whatch 
+
+- (void)application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *)userInfo reply:(void (^)(NSDictionary *))reply
+{
+    UIApplicationState state = [UIApplication sharedApplication].applicationState;
+    if (state != UIApplicationStateActive) {
+        // 在后台的时候起一个background才能获取数据,否则系统bug调不起来
+        __block UIBackgroundTaskIdentifier bogusWorkaroundTask;
+        void (^completionBlock) (NSDictionary *) = ^(NSDictionary *result) {
+            reply(result);
+            [[UIApplication sharedApplication] endBackgroundTask:bogusWorkaroundTask];
+        };
+        bogusWorkaroundTask = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
+            completionBlock(nil);
+        }];
+        [[WDReceiveWatchEngine instance] receiveWatchRequest:userInfo withReply:completionBlock];
+    } else {
+        [[WDReceiveWatchEngine instance] receiveWatchRequest:userInfo withReply:reply];
+    }
+}
+
+- (BOOL)application:(UIApplication *)application willContinueUserActivityWithType:(NSString *)userActivityType {
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray *))restorationHandler {
+    if (userActivity && [userActivity isKindOfClass:[NSUserActivity class]]) {
+        if ([userActivity.activityType isEqualToString:@"WDWatch"]) {
+            NSDictionary *userActivityUserInfo = userActivity.userInfo;
+            if ([[userActivityUserInfo objectForKey:@"Notification"] isEqualToString:@"alert"]) {
+                // handoff 播放动作
+                // 从watch进入,打开视频播放页
+                UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Watch" message:@"watch notification" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
+                [alert show];
+            }
+        }
+    }
+    return NO;
 }
 
 @end

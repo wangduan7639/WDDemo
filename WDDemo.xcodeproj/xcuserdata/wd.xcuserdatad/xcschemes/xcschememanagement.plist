@@ -4,10 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Notification - WDWatchDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>39</integer>
+		</dict>
 		<key>WDDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>WDWatchDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>38</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -23,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>766E105A1BF96D6800D18820</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76BA90691C04389A0075873D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

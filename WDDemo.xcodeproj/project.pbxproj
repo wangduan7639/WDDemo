@@ -60,6 +60,18 @@
 		76A86B651BFEE57300580E9B /* WDWebTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A86B641BFEE57300580E9B /* WDWebTestViewController.m */; };
 		76A86B681BFEE58900580E9B /* WDWebTestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A86B671BFEE58900580E9B /* WDWebTestViewModel.m */; };
 		76A86B6C1BFF184200580E9B /* WDFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A86B6B1BFF184200580E9B /* WDFMDBManager.m */; };
+		76BA906E1C04389A0075873D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76BA906C1C04389A0075873D /* Interface.storyboard */; };
+		76BA90701C04389A0075873D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BA906F1C04389A0075873D /* Assets.xcassets */; };
+		76BA90771C04389A0075873D /* WDWatchDemo Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 76BA90761C04389A0075873D /* WDWatchDemo Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		76BA907F1C04389A0075873D /* WDRootInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BA907E1C04389A0075873D /* WDRootInterfaceController.m */; };
+		76BA90821C04389A0075873D /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BA90811C04389A0075873D /* ExtensionDelegate.m */; };
+		76BA90851C04389A0075873D /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BA90841C04389A0075873D /* NotificationController.m */; };
+		76BA90871C04389A0075873D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76BA90861C04389A0075873D /* Assets.xcassets */; };
+		76BA908B1C04389A0075873D /* WDWatchDemo.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 76BA906A1C04389A0075873D /* WDWatchDemo.app */; };
+		76BA90961C044BAF0075873D /* WDTableInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BA90951C044BAF0075873D /* WDTableInterfaceController.m */; };
+		76BA90991C044EF40075873D /* WDMenuInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BA90981C044EF40075873D /* WDMenuInterfaceController.m */; };
+		76BA909D1C0453690075873D /* WDReceiveWatchEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BA909C1C0453690075873D /* WDReceiveWatchEngine.m */; };
+		76BA90A11C0457DA0075873D /* WDWatchDataEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BA90A01C0457DA0075873D /* WDWatchDataEngine.m */; };
 		76E7992E1BFDCF2F008DCD84 /* WDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E7992B1BFDCF2F008DCD84 /* WDTableViewCell.m */; };
 		76E7992F1BFDCF2F008DCD84 /* WDTableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E7992D1BFDCF2F008DCD84 /* WDTableViewItem.m */; };
 		76E799321BFDCFFA008DCD84 /* WDHtmlTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E799311BFDCFFA008DCD84 /* WDHtmlTableCell.m */; };
@@ -81,7 +93,46 @@
 			remoteGlobalIDString = 766E10331BF96D6800D18820;
 			remoteInfo = WDDemo;
 		};
+		76BA90781C04389A0075873D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 766E102C1BF96D6800D18820 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76BA90751C04389A0075873D;
+			remoteInfo = "WDWatchDemo Extension";
+		};
+		76BA90891C04389A0075873D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 766E102C1BF96D6800D18820 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76BA90691C04389A0075873D;
+			remoteInfo = WDWatchDemo;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		76BA90911C04389A0075873D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				76BA90771C04389A0075873D /* WDWatchDemo Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BA90931C04389A0075873D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				76BA908B1C04389A0075873D /* WDWatchDemo.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		34A1BEE0333C6AC9BA06FA4D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +238,28 @@
 		76A86B671BFEE58900580E9B /* WDWebTestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDWebTestViewModel.m; sourceTree = "<group>"; };
 		76A86B6A1BFF184200580E9B /* WDFMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDFMDBManager.h; sourceTree = "<group>"; };
 		76A86B6B1BFF184200580E9B /* WDFMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDFMDBManager.m; sourceTree = "<group>"; };
+		76BA906A1C04389A0075873D /* WDWatchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDWatchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BA906D1C04389A0075873D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		76BA906F1C04389A0075873D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76BA90711C04389A0075873D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76BA90761C04389A0075873D /* WDWatchDemo Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WDWatchDemo Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76BA907C1C04389A0075873D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		76BA907D1C04389A0075873D /* WDRootInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDRootInterfaceController.h; sourceTree = "<group>"; };
+		76BA907E1C04389A0075873D /* WDRootInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDRootInterfaceController.m; sourceTree = "<group>"; };
+		76BA90801C04389A0075873D /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		76BA90811C04389A0075873D /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		76BA90831C04389A0075873D /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		76BA90841C04389A0075873D /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		76BA90861C04389A0075873D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76BA90881C04389A0075873D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76BA90941C044BAF0075873D /* WDTableInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTableInterfaceController.h; sourceTree = "<group>"; };
+		76BA90951C044BAF0075873D /* WDTableInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDTableInterfaceController.m; sourceTree = "<group>"; };
+		76BA90971C044EF40075873D /* WDMenuInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDMenuInterfaceController.h; sourceTree = "<group>"; };
+		76BA90981C044EF40075873D /* WDMenuInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDMenuInterfaceController.m; sourceTree = "<group>"; };
+		76BA909B1C0453690075873D /* WDReceiveWatchEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDReceiveWatchEngine.h; sourceTree = "<group>"; };
+		76BA909C1C0453690075873D /* WDReceiveWatchEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDReceiveWatchEngine.m; sourceTree = "<group>"; };
+		76BA909F1C0457DA0075873D /* WDWatchDataEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDWatchDataEngine.h; sourceTree = "<group>"; };
+		76BA90A01C0457DA0075873D /* WDWatchDataEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDWatchDataEngine.m; sourceTree = "<group>"; };
 		76E7992A1BFDCF2F008DCD84 /* WDTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTableViewCell.h; sourceTree = "<group>"; };
 		76E7992B1BFDCF2F008DCD84 /* WDTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDTableViewCell.m; sourceTree = "<group>"; };
 		76E7992C1BFDCF2F008DCD84 /* WDTableViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDTableViewItem.h; sourceTree = "<group>"; };
@@ -216,6 +289,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		766E10581BF96D6800D18820 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BA90731C04389A0075873D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -295,6 +375,7 @@
 		7601108B1BF9BAE700982091 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				76BA909A1C0453380075873D /* WatchEngine */,
 				7601108C1BF9BB0000982091 /* CommonTools */,
 				760110991BF9BB0A00982091 /* WDCore.h */,
 				760110CB1BF9F16600982091 /* WDDebug.h */,
@@ -544,6 +625,8 @@
 				766E10361BF96D6800D18820 /* WDDemo */,
 				766E10531BF96D6800D18820 /* WDDemoTests */,
 				766E105E1BF96D6800D18820 /* WDDemoUITests */,
+				76BA906B1C04389A0075873D /* WDWatchDemo */,
+				76BA907A1C04389A0075873D /* WDWatchDemo Extension */,
 				766E10351BF96D6800D18820 /* Products */,
 				1E6EB14EF07430BF124D51AB /* Pods */,
 				35678FAE8644F690F85B54FC /* Frameworks */,
@@ -556,6 +639,8 @@
 				766E10341BF96D6800D18820 /* WDDemo.app */,
 				766E10501BF96D6800D18820 /* WDDemoTests.xctest */,
 				766E105B1BF96D6800D18820 /* WDDemoUITests.xctest */,
+				76BA906A1C04389A0075873D /* WDWatchDemo.app */,
+				76BA90761C04389A0075873D /* WDWatchDemo Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -693,6 +778,63 @@
 			path = FMDB;
 			sourceTree = "<group>";
 		};
+		76BA906B1C04389A0075873D /* WDWatchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				76BA906C1C04389A0075873D /* Interface.storyboard */,
+				76BA906F1C04389A0075873D /* Assets.xcassets */,
+				76BA90711C04389A0075873D /* Info.plist */,
+			);
+			path = WDWatchDemo;
+			sourceTree = "<group>";
+		};
+		76BA907A1C04389A0075873D /* WDWatchDemo Extension */ = {
+			isa = PBXGroup;
+			children = (
+				76BA909E1C0457960075873D /* WatchEngine */,
+				76BA907D1C04389A0075873D /* WDRootInterfaceController.h */,
+				76BA907E1C04389A0075873D /* WDRootInterfaceController.m */,
+				76BA90941C044BAF0075873D /* WDTableInterfaceController.h */,
+				76BA90951C044BAF0075873D /* WDTableInterfaceController.m */,
+				76BA90971C044EF40075873D /* WDMenuInterfaceController.h */,
+				76BA90981C044EF40075873D /* WDMenuInterfaceController.m */,
+				76BA90801C04389A0075873D /* ExtensionDelegate.h */,
+				76BA90811C04389A0075873D /* ExtensionDelegate.m */,
+				76BA90831C04389A0075873D /* NotificationController.h */,
+				76BA90841C04389A0075873D /* NotificationController.m */,
+				76BA90861C04389A0075873D /* Assets.xcassets */,
+				76BA90881C04389A0075873D /* Info.plist */,
+				76BA907B1C04389A0075873D /* Supporting Files */,
+			);
+			path = "WDWatchDemo Extension";
+			sourceTree = "<group>";
+		};
+		76BA907B1C04389A0075873D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76BA907C1C04389A0075873D /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76BA909A1C0453380075873D /* WatchEngine */ = {
+			isa = PBXGroup;
+			children = (
+				76BA909B1C0453690075873D /* WDReceiveWatchEngine.h */,
+				76BA909C1C0453690075873D /* WDReceiveWatchEngine.m */,
+			);
+			path = WatchEngine;
+			sourceTree = "<group>";
+		};
+		76BA909E1C0457960075873D /* WatchEngine */ = {
+			isa = PBXGroup;
+			children = (
+				76BA909F1C0457DA0075873D /* WDWatchDataEngine.h */,
+				76BA90A01C0457DA0075873D /* WDWatchDataEngine.m */,
+			);
+			path = WatchEngine;
+			sourceTree = "<group>";
+		};
 		76E799291BFDCF2F008DCD84 /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -717,10 +859,12 @@
 				766E10321BF96D6800D18820 /* Resources */,
 				791463805CD34A9017120410 /* Embed Pods Frameworks */,
 				967D7919D3E1B3930808B35B /* Copy Pods Resources */,
+				76BA90931C04389A0075873D /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				76BA908A1C04389A0075873D /* PBXTargetDependency */,
 			);
 			name = WDDemo;
 			productName = WDDemo;
@@ -763,6 +907,40 @@
 			productReference = 766E105B1BF96D6800D18820 /* WDDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		76BA90691C04389A0075873D /* WDWatchDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76BA90921C04389A0075873D /* Build configuration list for PBXNativeTarget "WDWatchDemo" */;
+			buildPhases = (
+				76BA90681C04389A0075873D /* Resources */,
+				76BA90911C04389A0075873D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76BA90791C04389A0075873D /* PBXTargetDependency */,
+			);
+			name = WDWatchDemo;
+			productName = WDWatchDemo;
+			productReference = 76BA906A1C04389A0075873D /* WDWatchDemo.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		76BA90751C04389A0075873D /* WDWatchDemo Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76BA90901C04389A0075873D /* Build configuration list for PBXNativeTarget "WDWatchDemo Extension" */;
+			buildPhases = (
+				76BA90721C04389A0075873D /* Sources */,
+				76BA90731C04389A0075873D /* Frameworks */,
+				76BA90741C04389A0075873D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WDWatchDemo Extension";
+			productName = "WDWatchDemo Extension";
+			productReference = 76BA90761C04389A0075873D /* WDWatchDemo Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -784,6 +962,12 @@
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = 766E10331BF96D6800D18820;
 					};
+					76BA90691C04389A0075873D = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					76BA90751C04389A0075873D = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
 				};
 			};
 			buildConfigurationList = 766E102F1BF96D6800D18820 /* Build configuration list for PBXProject "WDDemo" */;
@@ -802,6 +986,8 @@
 				766E10331BF96D6800D18820 /* WDDemo */,
 				766E104F1BF96D6800D18820 /* WDDemoTests */,
 				766E105A1BF96D6800D18820 /* WDDemoUITests */,
+				76BA90691C04389A0075873D /* WDWatchDemo */,
+				76BA90751C04389A0075873D /* WDWatchDemo Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -833,6 +1019,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BA90681C04389A0075873D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BA90701C04389A0075873D /* Assets.xcassets in Resources */,
+				76BA906E1C04389A0075873D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BA90741C04389A0075873D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BA90871C04389A0075873D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -897,6 +1100,7 @@
 				766E103C1BF96D6800D18820 /* AppDelegate.m in Sources */,
 				51275D4A1C02020F00B0687B /* WDFMDBAddViewController.m in Sources */,
 				76E799351BFDD00F008DCD84 /* WDHtmlTableItem.m in Sources */,
+				76BA909D1C0453690075873D /* WDReceiveWatchEngine.m in Sources */,
 				76A86B681BFEE58900580E9B /* WDWebTestViewModel.m in Sources */,
 				760110951BF9BB0000982091 /* EXtensionUIImage.m in Sources */,
 				760110961BF9BB0000982091 /* NSString+Tool.m in Sources */,
@@ -956,6 +1160,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		76BA90721C04389A0075873D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BA90821C04389A0075873D /* ExtensionDelegate.m in Sources */,
+				76BA907F1C04389A0075873D /* WDRootInterfaceController.m in Sources */,
+				76BA90991C044EF40075873D /* WDMenuInterfaceController.m in Sources */,
+				76BA90851C04389A0075873D /* NotificationController.m in Sources */,
+				76BA90A11C0457DA0075873D /* WDWatchDataEngine.m in Sources */,
+				76BA90961C044BAF0075873D /* WDTableInterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -968,6 +1185,16 @@
 			isa = PBXTargetDependency;
 			target = 766E10331BF96D6800D18820 /* WDDemo */;
 			targetProxy = 766E105C1BF96D6800D18820 /* PBXContainerItemProxy */;
+		};
+		76BA90791C04389A0075873D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76BA90751C04389A0075873D /* WDWatchDemo Extension */;
+			targetProxy = 76BA90781C04389A0075873D /* PBXContainerItemProxy */;
+		};
+		76BA908A1C04389A0075873D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76BA90691C04389A0075873D /* WDWatchDemo */;
+			targetProxy = 76BA90891C04389A0075873D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -986,6 +1213,14 @@
 				766E10411BF96D6800D18820 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76BA906C1C04389A0075873D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76BA906D1C04389A0075873D /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1150,6 +1385,64 @@
 			};
 			name = Release;
 		};
+		76BA908C1C04389A0075873D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = WDWatchDemo_Extension;
+				INFOPLIST_FILE = WDWatchDemo/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = www.wangduan.com.WDDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		76BA908D1C04389A0075873D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = WDWatchDemo_Extension;
+				INFOPLIST_FILE = WDWatchDemo/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = www.wangduan.com.WDDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		76BA908E1C04389A0075873D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WDWatchDemo Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.wangduan.com.WDDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		76BA908F1C04389A0075873D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "WDWatchDemo Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.wangduan.com.WDDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1188,6 +1481,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		76BA90901C04389A0075873D /* Build configuration list for PBXNativeTarget "WDWatchDemo Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BA908E1C04389A0075873D /* Debug */,
+				76BA908F1C04389A0075873D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		76BA90921C04389A0075873D /* Build configuration list for PBXNativeTarget "WDWatchDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76BA908C1C04389A0075873D /* Debug */,
+				76BA908D1C04389A0075873D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
