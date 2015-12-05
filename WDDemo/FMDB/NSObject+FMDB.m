@@ -26,14 +26,13 @@
                 NSString *useKey = mapping[key] ? : key;
                 
                 if ([obj isKindOfClass:[NSString class]]) {
-//                    NSError *error = nil;
-//                    
-//                    id jsonObject = [NSJSONSerialization JSONObjectWithData:[obj dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingAllowFragments error:&error];
-//                    
-//                    if (!error) {
-//                        obj = jsonObject;
-//                    }
+                    NSError *error = nil;
                     
+                    id jsonObject = [NSJSONSerialization JSONObjectWithData:[obj dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingAllowFragments error:&error];
+                    
+                    if (!error) {
+                        obj = jsonObject;
+                    }
                 }
                 
                 if ([obj isKindOfClass:[NSNumber class]]) {
@@ -148,21 +147,22 @@
 
 #pragma mark Public
 //if the property type is a custom class, you need to overwrite this method.
-/*- (NSDictionary *)mapping
-{
-    return @{@"uid": @"id"};
-}
+/*
+ - (NSDictionary *)objectPropertys
+ {
+ return @{@"Model": [Model class]};
+ }
  */
+
 - (NSDictionary *)objectPropertys
 {
     return @{};
 }
 //if the property name and the JSON keys is not the same key, you need to overwrite this method.
-/*
-- (NSDictionary *)objectPropertys
-{
-    return @{@"Model": [Model class]};
-}
+/*- (NSDictionary *)mapping
+ {
+ return @{@"uid": @"id"};
+ }
  */
 - (NSDictionary *)mapping
 {
